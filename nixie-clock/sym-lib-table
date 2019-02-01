@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name nixie-clock-eagle-import)(type Legacy)(uri ${KIPRJMOD}/nixie-clock-eagle-import.lib)(options "")(descr ""))
+)
