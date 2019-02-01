@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:pi-ups-high-simple-cache
 EELAYER 26 0
 EELAYER END
 $Descr User 8268 5827
@@ -407,10 +408,6 @@ F 3 "" H 3800 1900 50  0001 C CNN
 	1    3800 1900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2900 2400 2900 2350
-Wire Wire Line
-	2900 2050 2900 2000
 Wire Wire Line
 	5150 1550 5150 1950
 Wire Wire Line
