@@ -433,4 +433,8 @@ Wire Wire Line
 Connection ~ 6700 3250
 Text Label 5050 2350 0    50   ~ 0
 +5.5V
+Text Notes 1350 1200 0    59   ~ 12
+Input\n
+Text Notes 6500 1250 0    59   ~ 12
+Output
 $EndSCHEMATC
