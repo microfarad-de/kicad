@@ -4,4 +4,8 @@ $CMP DC-DC
 D DC-DC Converter
 $ENDCMP
 #
+$CMP DIP8
+D Unknown DIP8 IC
+$ENDCMP
+#
 #End Doc Library
