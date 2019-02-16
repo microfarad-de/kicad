@@ -375,7 +375,7 @@ F 1 "?" H 7050 1400 50  0000 R CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7000 1375 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7000 1550 50  0001 C CNN
 	1    7000 1550
-	0    1    -1   0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Diode:1N4007 D10
@@ -813,7 +813,7 @@ Wire Wire Line
 Connection ~ 7400 5200
 Wire Wire Line
 	7400 5200 7400 5300
-Text GLabel 8650 5200 2    50   Input ~ 0
+Text GLabel 8600 5200 2    50   Input ~ 0
 P+
 Text GLabel 8600 5400 2    50   Input ~ 0
 P-
@@ -822,7 +822,7 @@ T+
 Text GLabel 8600 5800 2    50   Input ~ 0
 T-
 Wire Wire Line
-	7800 5200 8650 5200
+	7800 5200 8600 5200
 Connection ~ 7800 5200
 Wire Wire Line
 	8350 5700 8350 5400
@@ -831,160 +831,9 @@ Wire Wire Line
 Wire Wire Line
 	7800 5700 8350 5700
 Connection ~ 7800 5700
-$Comp
-L Isolator:TLP127 U?
-U 1 1 5C7EFCB2
-P 4250 3550
-F 0 "U?" H 4250 3750 50  0000 C CNN
-F 1 "TLP127" H 4250 3850 50  0000 C CNN
-F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 4250 3250 50  0001 C CIN
-F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 4180 3550 50  0001 L CNN
-	1    4250 3550
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4400 2400 4400 2250
 Connection ~ 4400 2250
-$Comp
-L Isolator:TLP127 U?
-U 1 1 5C7EF88C
-P 4250 3200
-F 0 "U?" H 4250 3525 50  0000 C CNN
-F 1 "TLP127" H 4250 3434 50  0000 C CNN
-F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 4250 2900 50  0001 C CIN
-F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 4180 3200 50  0001 L CNN
-	1    4250 3200
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 3450 3950 3300
-Wire Wire Line
-	4550 3300 4600 3300
-Wire Wire Line
-	4600 3300 4600 3450
-Wire Wire Line
-	4600 3450 4550 3450
-$Comp
-L power:GND #PWR?
-U 1 1 5C83D0DB
-P 4800 3350
-F 0 "#PWR?" H 4800 3100 50  0001 C CNN
-F 1 "GND" H 4805 3177 50  0000 C CNN
-F 2 "" H 4800 3350 50  0001 C CNN
-F 3 "" H 4800 3350 50  0001 C CNN
-	1    4800 3350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4800 3300 4800 3350
-Wire Wire Line
-	4600 3300 4800 3300
-Connection ~ 4600 3300
-$Comp
-L Amplifier_Operational:LM741 U?
-U 1 1 5C84FFE5
-P 4150 5900
-F 0 "U?" H 4491 5946 50  0000 L CNN
-F 1 "LM741" H 4491 5855 50  0000 L CNN
-F 2 "" H 4200 5950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm741.pdf" H 4300 6050 50  0001 C CNN
-	1    4150 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5C8709AD
-P 4050 5150
-F 0 "#PWR?" H 4050 5000 50  0001 C CNN
-F 1 "VCC" H 4067 5323 50  0000 C CNN
-F 2 "" H 4050 5150 50  0001 C CNN
-F 3 "" H 4050 5150 50  0001 C CNN
-	1    4050 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4050 5600 4050 5200
-$Comp
-L power:GND #PWR?
-U 1 1 5C877121
-P 4050 6500
-F 0 "#PWR?" H 4050 6250 50  0001 C CNN
-F 1 "GND" H 4055 6327 50  0000 C CNN
-F 2 "" H 4050 6500 50  0001 C CNN
-F 3 "" H 4050 6500 50  0001 C CNN
-	1    4050 6500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4050 6500 4050 6350
-$Comp
-L Device:C C?
-U 1 1 5C87DB90
-P 4250 5350
-F 0 "C?" V 4365 5396 50  0000 L CNN
-F 1 "22nF" V 4450 5300 50  0000 L CNN
-F 2 "" H 4288 5200 50  0001 C CNN
-F 3 "~" H 4250 5350 50  0001 C CNN
-	1    4250 5350
-	1    0    0    -1  
-$EndComp
-Connection ~ 4050 5200
-Wire Wire Line
-	4050 5200 4050 5150
-$Comp
-L power:GND #PWR?
-U 1 1 5C88AF1D
-P 4250 5500
-F 0 "#PWR?" H 4250 5250 50  0001 C CNN
-F 1 "GND" H 4255 5327 50  0000 C CNN
-F 2 "" H 4250 5500 50  0001 C CNN
-F 3 "" H 4250 5500 50  0001 C CNN
-	1    4250 5500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4050 5200 4250 5200
-$Comp
-L Device:R R?
-U 1 1 5C8C719D
-P 4800 3100
-F 0 "R?" V 4593 3100 50  0000 C CNN
-F 1 "670R" V 4684 3100 50  0000 C CNN
-F 2 "" V 4730 3100 50  0001 C CNN
-F 3 "~" H 4800 3100 50  0001 C CNN
-	1    4800 3100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5050 5900 4450 5900
-$Comp
-L Device:R_POT W?
-U 1 1 5C916A2E
-P 3350 6000
-F 0 "W?" H 3280 5954 50  0000 R CNN
-F 1 "500K" H 3280 6045 50  0000 R CNN
-F 2 "" H 3350 6000 50  0001 C CNN
-F 3 "~" H 3350 6000 50  0001 C CNN
-	1    3350 6000
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	3350 6150 3350 6350
-Wire Wire Line
-	3350 6350 4050 6350
-Connection ~ 4050 6350
-Wire Wire Line
-	4050 6350 4050 6200
-Wire Wire Line
-	3350 5850 3350 5200
-Wire Wire Line
-	3350 5200 4050 5200
-Wire Wire Line
-	3500 6000 3850 6000
-Text GLabel 2500 5800 0    50   Input ~ 0
-T+
-Text GLabel 2500 6000 0    50   Input ~ 0
-T-
 Connection ~ 1550 2950
 Connection ~ 2550 2650
 Wire Wire Line
@@ -1003,25 +852,7 @@ Wire Wire Line
 	2550 2650 2550 3650
 Connection ~ 2550 4250
 Wire Wire Line
-	2500 5800 3850 5800
-Wire Wire Line
-	2750 6000 2750 6350
-Wire Wire Line
-	2750 6350 3350 6350
-Connection ~ 3350 6350
-Wire Wire Line
-	2500 6000 2750 6000
-Wire Wire Line
 	2750 3650 2750 3700
-Wire Wire Line
-	2750 3350 2750 3200
-Wire Wire Line
-	2750 3200 3600 3200
-Wire Wire Line
-	3600 3200 3600 3650
-Wire Wire Line
-	3600 3650 3950 3650
-Connection ~ 2750 3200
 Wire Wire Line
 	2550 1850 2550 2650
 Wire Wire Line
@@ -1030,42 +861,18 @@ Connection ~ 3100 3100
 Wire Wire Line
 	3100 3100 3100 3250
 Wire Wire Line
-	3100 3100 3950 3100
-Wire Wire Line
-	3100 3100 2950 3100
-Wire Wire Line
-	2850 3100 2750 3100
-Wire Wire Line
-	2750 3100 2750 3200
-Wire Wire Line
 	2550 2650 3100 2650
 Wire Wire Line
 	2550 4250 3100 4250
-Wire Wire Line
-	5050 3100 5050 3650
-$Comp
-L Device:R R?
-U 1 1 5CAFFD9B
-P 4800 3650
-F 0 "R?" V 4900 3650 50  0000 C CNN
-F 1 "670R" V 5000 3650 50  0000 C CNN
-F 2 "" V 4730 3650 50  0001 C CNN
-F 3 "~" H 4800 3650 50  0001 C CNN
-	1    4800 3650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4550 3650 4650 3650
-Wire Wire Line
-	4950 3650 5050 3650
-Connection ~ 5050 3650
-Wire Wire Line
-	4550 3100 4650 3100
-Wire Wire Line
-	4950 3100 5050 3100
-Wire Wire Line
-	5050 3650 5050 5900
 Connection ~ 6200 1900
 Wire Wire Line
 	6200 1900 6200 1850
+Text Label 8950 1100 0    50   ~ 0
++24V
+Text Label 8400 5200 0    50   ~ 0
++9V
+Wire Wire Line
+	2750 3100 2750 3350
+Wire Wire Line
+	2750 3100 3100 3100
 $EndSCHEMATC
