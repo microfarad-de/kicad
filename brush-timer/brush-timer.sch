@@ -174,8 +174,6 @@ $EndComp
 Wire Wire Line
 	3700 2450 5100 2450
 Wire Wire Line
-	2250 2150 2250 1550
-Wire Wire Line
 	3500 1550 3600 1550
 Wire Wire Line
 	3600 1650 3600 1550
@@ -201,8 +199,6 @@ Wire Wire Line
 	4100 1550 4200 1550
 Wire Wire Line
 	4200 1550 4200 1650
-Wire Wire Line
-	2250 1550 3200 1550
 $Comp
 L power:VCC #PWR01
 U 1 1 5C6B2F77
@@ -306,4 +302,9 @@ Wire Wire Line
 Connection ~ 2900 2900
 Wire Wire Line
 	2900 2900 2900 2650
+Wire Wire Line
+	2900 2150 2900 1550
+Wire Wire Line
+	2900 1550 3200 1550
+Connection ~ 2900 2150
 $EndSCHEMATC
