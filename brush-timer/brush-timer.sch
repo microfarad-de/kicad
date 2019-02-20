@@ -1,12 +1,11 @@
 EESchema Schematic File Version 4
-LIBS:brush-timer-cache
 EELAYER 26 0
 EELAYER END
 $Descr User 8268 5827
 encoding utf-8
 Sheet 1 1
 Title "Arduino Toothbrush Timer"
-Date "2019-02-16"
+Date "2019-02-20"
 Rev ""
 Comp "microfarad.de"
 Comment1 "www.github.com/microfarad-de"
