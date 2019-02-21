@@ -5,7 +5,7 @@ $Descr User 8268 5827
 encoding utf-8
 Sheet 1 1
 Title "Arduino Toothbrush Timer"
-Date "2019-02-20"
+Date "2019-02-21"
 Rev ""
 Comp "microfarad.de"
 Comment1 "www.github.com/microfarad-de"
@@ -261,8 +261,6 @@ F 3 "~" H 1150 1900 50  0001 C CNN
 $EndComp
 Connection ~ 1350 1900
 Wire Wire Line
-	1350 1900 1550 1900
-Wire Wire Line
 	2700 1700 2700 1800
 Wire Wire Line
 	2700 1800 3850 1800
@@ -452,35 +450,6 @@ Wire Wire Line
 	5200 1600 7150 1600
 Wire Wire Line
 	7150 1600 7150 2950
-$Comp
-L Device:Jumper JP1
-U 1 1 5C6D3EE3
-P 1550 2650
-F 0 "JP1" V 1504 2776 50  0000 L CNN
-F 1 "Program" V 1595 2776 50  0000 L CNN
-F 2 "" H 1550 2650 50  0001 C CNN
-F 3 "~" H 1550 2650 50  0001 C CNN
-	1    1550 2650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1550 2350 1550 1900
-Connection ~ 1550 1900
-Wire Wire Line
-	1550 1900 2000 1900
-$Comp
-L power:GND #PWR08
-U 1 1 5C6D7A03
-P 1550 3050
-F 0 "#PWR08" H 1550 2800 50  0001 C CNN
-F 1 "GND" H 1555 2877 50  0000 C CNN
-F 2 "" H 1550 3050 50  0001 C CNN
-F 3 "" H 1550 3050 50  0001 C CNN
-	1    1550 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1550 3050 1550 2950
 Wire Wire Line
 	4200 1300 4100 1300
 Wire Wire Line
@@ -489,4 +458,6 @@ Wire Wire Line
 	4100 1100 3950 1100
 Wire Wire Line
 	3950 1100 3950 1200
+Wire Wire Line
+	1350 1900 2000 1900
 $EndSCHEMATC

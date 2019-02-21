@@ -1,4 +1,4 @@
-update=2019 February 20, Wednesday 20:55:08
+update=21.02.2019 10:40:27
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=/Users/Karim/BTSync/Projects/Arduino/brush-timer/doc/
+PlotDirectoryName=../../Arduino/brush-timer/doc/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
