@@ -9,7 +9,7 @@ Date "2019-02-21"
 Rev ""
 Comp "microfarad.de"
 Comment1 "www.github.com/microfarad-de"
-Comment2 "www.microfarad.de"
+Comment2 "www.microfarad.de/toothbrush-timer"
 Comment3 "Please visit:"
 Comment4 "Copyright (C) 2019, Karim Hraibi"
 $EndDescr
