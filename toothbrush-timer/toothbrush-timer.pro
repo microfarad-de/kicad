@@ -1,4 +1,4 @@
-update=21.02.2019 10:40:27
+update=2019 February 26, Tuesday 23:28:51
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=../../Arduino/brush-timer/doc/
+PlotDirectoryName=../../Arduino/toothbrush-timer/doc/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
