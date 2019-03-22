@@ -1,11 +1,12 @@
 EESchema Schematic File Version 4
+LIBS:toothbrush-timer-cache
 EELAYER 26 0
 EELAYER END
 $Descr User 8268 5827
 encoding utf-8
 Sheet 1 1
 Title "Arduino Toothbrush Timer"
-Date "2019-02-21"
+Date "2019-03-22"
 Rev ""
 Comp "microfarad.de"
 Comment1 "www.github.com/microfarad-de"
@@ -154,10 +155,10 @@ F 3 "" H 1050 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR06
+L power:VCC #PWR05
 U 1 1 5C6B316B
 P 3750 1100
-F 0 "#PWR06" H 3750 950 50  0001 C CNN
+F 0 "#PWR05" H 3750 950 50  0001 C CNN
 F 1 "VCC" H 3767 1273 50  0000 C CNN
 F 2 "" H 3750 1100 50  0001 C CNN
 F 3 "" H 3750 1100 50  0001 C CNN
@@ -169,10 +170,10 @@ Wire Wire Line
 Wire Wire Line
 	3750 1500 4200 1500
 $Comp
-L power:GND #PWR07
+L power:GND #PWR06
 U 1 1 5C6B344C
 P 3950 1200
-F 0 "#PWR07" H 3950 950 50  0001 C CNN
+F 0 "#PWR06" H 3950 950 50  0001 C CNN
 F 1 "GND" H 3955 1027 50  0000 C CNN
 F 2 "" H 3950 1200 50  0001 C CNN
 F 3 "" H 3950 1200 50  0001 C CNN
@@ -191,10 +192,10 @@ F 3 "~" H 5550 3100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R5
+L Device:R R3
 U 1 1 5C6B37B0
 P 6350 3600
-F 0 "R5" H 6420 3646 50  0000 L CNN
+F 0 "R3" H 6420 3646 50  0000 L CNN
 F 1 "2K2" H 6420 3555 50  0000 L CNN
 F 2 "" V 6280 3600 50  0001 C CNN
 F 3 "~" H 6350 3600 50  0001 C CNN
@@ -202,10 +203,10 @@ F 3 "~" H 6350 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR05
+L power:GND #PWR07
 U 1 1 5C6B44BA
 P 6350 3800
-F 0 "#PWR05" H 6350 3550 50  0001 C CNN
+F 0 "#PWR07" H 6350 3550 50  0001 C CNN
 F 1 "GND" H 6355 3627 50  0000 C CNN
 F 2 "" H 6350 3800 50  0001 C CNN
 F 3 "" H 6350 3800 50  0001 C CNN
@@ -213,10 +214,10 @@ F 3 "" H 6350 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R3
+L Device:R R2
 U 1 1 5C6B7A97
 P 2300 2450
-F 0 "R3" H 2370 2496 50  0000 L CNN
+F 0 "R2" H 2370 2496 50  0000 L CNN
 F 1 "1M" H 2370 2405 50  0000 L CNN
 F 2 "" V 2230 2450 50  0001 C CNN
 F 3 "~" H 2300 2450 50  0001 C CNN
