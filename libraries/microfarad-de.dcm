@@ -1,11 +1,19 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP BMS_1S
+D 1S Battery Protection Board
+$ENDCMP
+#
 $CMP DC-DC
 D DC-DC Converter
 $ENDCMP
 #
 $CMP DIP8
 D Unknown DIP8 IC
+$ENDCMP
+#
+$CMP FTDI232
+D FTDI232 USB to Serial Converter
 $ENDCMP
 #
 #End Doc Library
