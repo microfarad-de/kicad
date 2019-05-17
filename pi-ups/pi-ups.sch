@@ -60,7 +60,7 @@ F 3 "~" H 5700 5350 50  0001 C CNN
 $EndComp
 Text GLabel 5950 5250 2    50   Input ~ 0
 RX
-Text GLabel 5950 5150 2    50   Input ~ 0
+Text GLabel 5950 5150 2    50   Output ~ 0
 TX
 Wire Wire Line
 	5950 5250 5450 5250
@@ -68,13 +68,13 @@ Wire Wire Line
 	5950 5150 5450 5150
 Wire Wire Line
 	5550 5350 5450 5350
-Text GLabel 5950 5350 2    50   Input ~ 0
+Text GLabel 5950 5350 2    50   Output ~ 0
 RST
 Wire Wire Line
 	5950 5350 5850 5350
 Text GLabel 7550 2700 2    50   Input ~ 0
 TX
-Text GLabel 7550 2800 2    50   Input ~ 0
+Text GLabel 7550 2800 2    50   Output ~ 0
 RX
 Wire Wire Line
 	7500 2800 7550 2800
@@ -130,7 +130,7 @@ F 3 "" H 2300 1850 50  0001 C CNN
 	1    2300 1850
 	1    0    0    -1  
 $EndComp
-Text GLabel 2900 1750 2    50   Input ~ 0
+Text GLabel 2900 1750 2    50   Output ~ 0
 V_IN
 Wire Wire Line
 	2300 1850 2300 1650
@@ -226,8 +226,8 @@ Wire Wire Line
 Connection ~ 2650 5600
 Wire Wire Line
 	5450 4850 5700 4850
-Text GLabel 3200 2750 2    50   Input ~ 0
-V_BATT
+Text GLabel 3200 2750 2    50   Output ~ 0
+V_UPS
 Wire Wire Line
 	2450 4500 2900 4500
 Wire Wire Line
@@ -377,7 +377,7 @@ Connection ~ 9700 1900
 Wire Wire Line
 	8850 2350 8750 2350
 Text GLabel 9250 2800 2    50   Input ~ 0
-V_BATT
+V_UPS
 Wire Wire Line
 	9250 2800 9150 2800
 Text GLabel 9250 2150 2    50   Input ~ 0
@@ -410,17 +410,6 @@ F 3 "" H 3150 3250 50  0001 C CNN
 	1    2600 2850
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+BATT #PWR05
-U 1 1 5CE2F6C4
-P 2900 3850
-F 0 "#PWR05" H 2900 3700 50  0001 C CNN
-F 1 "+BATT" H 2915 4023 50  0000 C CNN
-F 2 "" H 2900 3850 50  0001 C CNN
-F 3 "" H 2900 3850 50  0001 C CNN
-	1    2900 3850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3100 2750 3200 2750
 $Comp
@@ -439,17 +428,6 @@ Wire Wire Line
 Wire Wire Line
 	3200 2950 3200 3050
 $Comp
-L power:+BATT #PWR01
-U 1 1 5CE436AA
-P 2000 2500
-F 0 "#PWR01" H 2000 2350 50  0001 C CNN
-F 1 "+BATT" H 2015 2673 50  0000 C CNN
-F 2 "" H 2000 2500 50  0001 C CNN
-F 3 "" H 2000 2500 50  0001 C CNN
-	1    2000 2500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR02
 U 1 1 5CE49B9B
 P 2000 3050
@@ -464,13 +442,7 @@ Wire Wire Line
 	2000 3050 2000 2950
 Wire Wire Line
 	2000 2950 2100 2950
-Wire Wire Line
-	2100 2750 2000 2750
-Wire Wire Line
-	2000 2750 2000 2550
-Wire Wire Line
-	2000 2550 2450 2550
-Text GLabel 9250 1500 2    50   Input ~ 0
+Text GLabel 9250 1500 2    50   Output ~ 0
 V_OUT
 Wire Wire Line
 	9250 1500 9150 1500
@@ -635,32 +607,19 @@ F 3 "~" H 5000 1800 50  0001 C CNN
 	1    5000 1800
 	-1   0    0    -1  
 $EndComp
-Text GLabel 5850 1400 2    50   Input ~ 0
+Text GLabel 5750 1400 0    50   Input ~ 0
 V_IN
 Wire Wire Line
-	5850 1400 5800 1400
+	5750 1400 5800 1400
 Wire Wire Line
 	5800 1400 5800 1650
-$Comp
-L power:+BATT #PWR07
-U 1 1 5CEA4FDB
-P 5400 1400
-F 0 "#PWR07" H 5400 1250 50  0001 C CNN
-F 1 "+BATT" H 5415 1573 50  0000 C CNN
-F 2 "" H 5400 1400 50  0001 C CNN
-F 3 "" H 5400 1400 50  0001 C CNN
-	1    5400 1400
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 1650 5400 1400
 Text GLabel 4950 1400 0    50   Input ~ 0
-V_BATT
+V_UPS
 Wire Wire Line
 	5000 1650 5000 1400
 Wire Wire Line
 	5000 1400 4950 1400
-Text GLabel 7550 2400 2    50   Input ~ 0
+Text GLabel 7550 2400 2    50   Output ~ 0
 LED
 Wire Wire Line
 	7550 2400 7500 2400
@@ -699,7 +658,7 @@ F 3 "" H 8550 4650 50  0001 C CNN
 	1    8550 4650
 	1    0    0    -1  
 $EndComp
-Text GLabel 7550 2300 2    50   Input ~ 0
+Text GLabel 7550 2300 2    50   Output ~ 0
 CHG
 Wire Wire Line
 	7550 2300 7500 2300
@@ -763,27 +722,11 @@ Wire Wire Line
 Wire Wire Line
 	8200 5250 8200 5450
 Wire Wire Line
-	2000 2550 2000 2500
-Connection ~ 2000 2550
-Wire Wire Line
 	8650 5900 8750 5900
 Wire Wire Line
 	8200 5850 8200 5900
 Wire Wire Line
 	8200 5900 8350 5900
-$Comp
-L power:+BATT #PWR016
-U 1 1 5CF56082
-P 9150 5800
-F 0 "#PWR016" H 9150 5650 50  0001 C CNN
-F 1 "+BATT" H 9165 5973 50  0000 C CNN
-F 2 "" H 9150 5800 50  0001 C CNN
-F 3 "" H 9150 5800 50  0001 C CNN
-	1    9150 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9150 5800 9150 5900
 Wire Wire Line
 	9150 5900 9050 5900
 Text GLabel 7600 5250 0    50   Input ~ 0
@@ -856,4 +799,25 @@ Wire Wire Line
 	8550 4550 8550 4650
 Wire Wire Line
 	2900 3900 2900 3850
+Text GLabel 3000 3850 2    50   BiDi ~ 0
+V_BATT
+Wire Wire Line
+	2900 3850 3000 3850
+Text GLabel 2000 2750 0    50   Input ~ 0
+V_BATT
+Wire Wire Line
+	2450 2550 2100 2550
+Wire Wire Line
+	2100 2550 2100 2750
+Connection ~ 2100 2750
+Wire Wire Line
+	2100 2750 2000 2750
+Text GLabel 9150 5900 2    50   Output ~ 0
+V_BATT
+Text GLabel 5350 1200 0    50   Input ~ 0
+V_BATT
+Wire Wire Line
+	5350 1200 5400 1200
+Wire Wire Line
+	5400 1200 5400 1650
 $EndSCHEMATC

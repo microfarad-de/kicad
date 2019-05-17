@@ -1,4 +1,4 @@
-update=01.02.2019 11:47:59
+update=2019 May 17, Friday 19:30:17
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=../../Arduino/pi-ups/doc/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
