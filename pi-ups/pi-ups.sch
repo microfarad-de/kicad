@@ -130,7 +130,7 @@ F 3 "" H 2300 1850 50  0001 C CNN
 	1    2300 1850
 	1    0    0    -1  
 $EndComp
-Text GLabel 2900 1750 2    50   Output ~ 0
+Text GLabel 2550 1750 2    50   Output ~ 0
 V_IN
 Wire Wire Line
 	2300 1850 2300 1650
@@ -140,10 +140,10 @@ Wire Wire Line
 Wire Wire Line
 	2300 1250 2300 1550
 Connection ~ 2300 1550
-Text GLabel 2900 1400 2    50   Input ~ 0
-V_OUT
+Text GLabel 2550 1350 2    50   Input ~ 0
+V_RPI
 Wire Wire Line
-	2200 1750 2900 1750
+	2200 1750 2550 1750
 $Comp
 L Device:Battery_Cell BT1
 U 1 1 5CDE0E1D
@@ -270,26 +270,6 @@ F 3 "" H 9700 1350 50  0001 C CNN
 	1    9700 1350
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:Polyfuse F1
-U 1 1 5CDF8A9B
-P 2650 1400
-F 0 "F1" V 2425 1400 50  0000 C CNN
-F 1 "3.7A" V 2516 1400 50  0000 C CNN
-F 2 "" H 2700 1200 50  0001 L CNN
-F 3 "~" H 2650 1400 50  0001 C CNN
-	1    2650 1400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2200 1350 2200 1400
-Wire Wire Line
-	2200 1400 2500 1400
-Connection ~ 2200 1400
-Wire Wire Line
-	2200 1400 2200 1450
-Wire Wire Line
-	2800 1400 2900 1400
 $Comp
 L power:+5V #PWR010
 U 1 1 5CE042BB
@@ -443,7 +423,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 2950 2100 2950
 Text GLabel 9250 1500 2    50   Output ~ 0
-V_OUT
+V_RPI
 Wire Wire Line
 	9250 1500 9150 1500
 $Comp
@@ -820,4 +800,14 @@ Wire Wire Line
 	5350 1200 5400 1200
 Wire Wire Line
 	5400 1200 5400 1650
+Text GLabel 9900 3200 2    50   Output ~ 0
+V_HDD
+Text GLabel 2550 1450 2    50   Input ~ 0
+V_HDD
+Wire Wire Line
+	9700 3200 9900 3200
+Wire Wire Line
+	2200 1350 2550 1350
+Wire Wire Line
+	2200 1450 2550 1450
 $EndSCHEMATC
