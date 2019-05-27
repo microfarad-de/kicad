@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Raspberry Pi UPS"
-Date "2019-05-16"
+Date "2019-05-25"
 Rev ""
 Comp "microfarad.de"
 Comment1 "www.github.com/microfarad-de"
