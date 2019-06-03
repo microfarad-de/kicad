@@ -48,10 +48,10 @@ F 3 "" H 5700 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C5
+L Device:C C6
 U 1 1 5CDDD4BF
 P 5700 5350
-F 0 "C5" V 5950 5400 50  0000 R CNN
+F 0 "C6" V 5950 5400 50  0000 R CNN
 F 1 "100nF" V 5850 5400 50  0000 R CNN
 F 2 "" H 5738 5200 50  0001 C CNN
 F 3 "~" H 5700 5350 50  0001 C CNN
@@ -293,10 +293,10 @@ F 3 "" H 7900 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C7
+L Device:CP C8
 U 1 1 5CE05AE7
 P 9450 3650
-F 0 "C7" H 9568 3696 50  0000 L CNN
+F 0 "C8" H 9568 3696 50  0000 L CNN
 F 1 "1000µF/10V" H 9568 3605 50  0000 L CNN
 F 2 "" H 9488 3500 50  0001 C CNN
 F 3 "~" H 9450 3650 50  0001 C CNN
@@ -304,10 +304,10 @@ F 3 "~" H 9450 3650 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C C8
+L Device:C C9
 U 1 1 5CE05C0B
 P 9950 3650
-F 0 "C8" H 9835 3696 50  0000 R CNN
+F 0 "C9" H 9835 3696 50  0000 R CNN
 F 1 "220nF" H 9835 3605 50  0000 R CNN
 F 2 "" H 9988 3500 50  0001 C CNN
 F 3 "~" H 9950 3650 50  0001 C CNN
@@ -585,13 +585,11 @@ F 3 "~" H 4750 1800 50  0001 C CNN
 	1    4750 1800
 	-1   0    0    -1  
 $EndComp
-Text GLabel 5750 1400 0    50   Input ~ 0
+Text GLabel 4700 1400 0    50   Input ~ 0
 V_IN
 Wire Wire Line
-	5750 1400 5800 1400
-Wire Wire Line
 	5800 1400 5800 1650
-Text GLabel 4700 1400 0    50   Input ~ 0
+Text GLabel 5800 1400 0    50   Input ~ 0
 V_UPS
 Wire Wire Line
 	4750 1650 4750 1400
@@ -717,20 +715,8 @@ Wire Wire Line
 Wire Wire Line
 	7900 2500 7900 2600
 Wire Wire Line
-	5800 1950 5800 2100
-Wire Wire Line
 	5450 1950 5450 2300
-Wire Wire Line
-	4750 1950 4750 2400
-Wire Wire Line
-	6500 2100 5800 2100
-Connection ~ 5800 2100
-Wire Wire Line
-	5800 2100 5800 2550
 Connection ~ 5450 2300
-Connection ~ 4750 2400
-Wire Wire Line
-	4750 2400 4750 2550
 Wire Wire Line
 	8300 1900 8300 2350
 Wire Wire Line
@@ -799,10 +785,10 @@ Wire Wire Line
 Wire Wire Line
 	2200 1450 2600 1450
 $Comp
-L Device:C C6
+L Device:C C7
 U 1 1 5CEA3D6D
 P 8450 5250
-F 0 "C6" V 8300 5200 50  0000 R CNN
+F 0 "C7" V 8300 5200 50  0000 R CNN
 F 1 "470nF" V 8300 5500 50  0000 R CNN
 F 2 "" H 8488 5100 50  0001 C CNN
 F 3 "~" H 8450 5250 50  0001 C CNN
@@ -897,18 +883,16 @@ Connection ~ 3200 1350
 Wire Wire Line
 	3200 1350 3400 1350
 $Comp
-L Device:C C4
+L Device:C C5
 U 1 1 5CF4324E
 P 5100 2700
-F 0 "C4" H 5050 2800 50  0000 R CNN
+F 0 "C5" H 5050 2800 50  0000 R CNN
 F 1 "100nF" H 5100 2600 50  0000 R CNN
 F 2 "" H 5138 2550 50  0001 C CNN
 F 3 "~" H 5100 2700 50  0001 C CNN
 	1    5100 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4750 2400 6500 2400
 Wire Wire Line
 	5450 2950 5800 2950
 Wire Wire Line
@@ -924,4 +908,38 @@ Wire Wire Line
 	5100 2300 5450 2300
 Wire Wire Line
 	5100 2300 5100 2550
+Wire Wire Line
+	4750 1950 4750 2100
+Wire Wire Line
+	6500 2400 5800 2400
+Connection ~ 5800 2400
+Wire Wire Line
+	5800 2400 5800 2550
+Wire Wire Line
+	5800 1950 5800 2400
+Wire Wire Line
+	6500 2100 4750 2100
+Connection ~ 4750 2100
+Wire Wire Line
+	4750 2100 4750 2550
+$Comp
+L Device:C C4
+U 1 1 5D02415F
+P 4400 2700
+F 0 "C4" H 4350 2800 50  0000 R CNN
+F 1 "100nF" H 4400 2600 50  0000 R CNN
+F 2 "" H 4438 2550 50  0001 C CNN
+F 3 "~" H 4400 2700 50  0001 C CNN
+	1    4400 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2850 4400 2950
+Wire Wire Line
+	4400 2950 4750 2950
+Connection ~ 4750 2950
+Wire Wire Line
+	4400 2550 4400 2100
+Wire Wire Line
+	4400 2100 4750 2100
 $EndSCHEMATC
