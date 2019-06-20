@@ -10,9 +10,9 @@ Date "2019-06-08"
 Rev ""
 Comp "microfarad.de"
 Comment1 "www.github.com/microfarad-de"
-Comment2 "Please visit:"
-Comment3 "Copyright (C) 2019, Karim Hraibi"
-Comment4 ""
+Comment2 "www.microfarad.de/pi-ups"
+Comment3 "Please visit:"
+Comment4 "Copyright (C) 2019, Karim Hraibi"
 $EndDescr
 $Comp
 L microfarad-de:Arduino_Pro_Mini U5
