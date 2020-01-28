@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:water-alarm-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -194,6 +195,17 @@ F 2 "" V 4780 6000 50  0001 C CNN
 F 3 "~" H 4850 6000 50  0001 C CNN
 	1    4850 6000
 	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC327 Q1
+U 1 1 5DB8AA1B
+P 3300 5350
+F 0 "Q1" H 3491 5304 50  0000 L CNN
+F 1 "BC327" H 3491 5395 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3500 5275 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/BC327-D.PDF" H 3300 5350 50  0001 L CNN
+	1    3300 5350
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR011
@@ -1208,15 +1220,4 @@ Wire Wire Line
 Connection ~ 5200 7050
 Text Notes 5400 6100 0    50   ~ 0
 Water Sensor System
-$Comp
-L Transistor_BJT:BC327 Q1
-U 1 1 5DB8AA1B
-P 3300 5350
-F 0 "Q1" H 3491 5304 50  0000 L CNN
-F 1 "BC327" H 3491 5395 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3500 5275 50  0001 L CIN
-F 3 "http://www.onsemi.com/pub_link/Collateral/BC327-D.PDF" H 3300 5350 50  0001 L CNN
-	1    3300 5350
-	1    0    0    1   
-$EndComp
 $EndSCHEMATC
