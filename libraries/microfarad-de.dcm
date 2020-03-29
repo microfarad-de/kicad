@@ -4,6 +4,10 @@ $CMP BMS_1S
 D 1S Battery Protection Board
 $ENDCMP
 #
+$CMP CASIO_ASIC
+D A simplified symbol for a casio watch asic (e.g. F-91w module 593)
+$ENDCMP
+#
 $CMP DC-DC
 D DC-DC Converter
 $ENDCMP
@@ -14,6 +18,10 @@ $ENDCMP
 #
 $CMP FTDI232
 D FTDI232 USB to Serial Converter
+$ENDCMP
+#
+$CMP SiT1552
+D Smallest, Ultra-Low Power, 32.768 kHz MEMS TCXO
 $ENDCMP
 #
 #End Doc Library

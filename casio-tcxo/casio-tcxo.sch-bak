@@ -1,0 +1,145 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 8268 5827
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C?
+U 1 1 5E818B15
+P 4800 2600
+F 0 "C?" V 5052 2600 50  0000 C CNN
+F 1 "10pF" V 4961 2600 50  0000 C CNN
+F 2 "" H 4838 2450 50  0001 C CNN
+F 3 "~" H 4800 2600 50  0001 C CNN
+	1    4800 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5E81A6FF
+P 2300 2650
+F 0 "BT?" H 2418 2746 50  0000 L CNN
+F 1 "CR2015" H 2418 2655 50  0000 L CNN
+F 2 "" V 2300 2710 50  0001 C CNN
+F 3 "~" V 2300 2710 50  0001 C CNN
+	1    2300 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5E81CD05
+P 2300 2100
+F 0 "#PWR?" H 2300 1950 50  0001 C CNN
+F 1 "+BATT" H 2315 2273 50  0000 C CNN
+F 2 "" H 2300 2100 50  0001 C CNN
+F 3 "" H 2300 2100 50  0001 C CNN
+	1    2300 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5E81DB05
+P 6350 2100
+F 0 "#PWR?" H 6350 1950 50  0001 C CNN
+F 1 "+BATT" H 6365 2273 50  0000 C CNN
+F 2 "" H 6350 2100 50  0001 C CNN
+F 3 "" H 6350 2100 50  0001 C CNN
+	1    6350 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L microfarad-de:CASIO_ASIC U?
+U 1 1 5E81F246
+P 3600 2600
+F 0 "U?" H 3600 3265 50  0000 C CNN
+F 1 "CASIO_ASIC" H 3600 3174 50  0000 C CNN
+F 2 "" H 3600 2600 50  0001 C CNN
+F 3 "" H 3600 2600 50  0001 C CNN
+	1    3600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L microfarad-de:SiT1552 U?
+U 1 1 5E820389
+P 5800 2700
+F 0 "U?" H 5800 2335 50  0000 C CNN
+F 1 "SiT1552" H 5800 2426 50  0000 C CNN
+F 2 "" H 5800 2700 50  0001 C CNN
+F 3 "" H 5800 2700 50  0001 C CNN
+	1    5800 2700
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E821DD8
+P 2300 3100
+F 0 "#PWR?" H 2300 2850 50  0001 C CNN
+F 1 "GND" H 2305 2927 50  0000 C CNN
+F 2 "" H 2300 3100 50  0001 C CNN
+F 3 "" H 2300 3100 50  0001 C CNN
+	1    2300 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3100 2300 2900
+Wire Wire Line
+	2300 2100 2300 2300
+Wire Wire Line
+	2900 2300 2300 2300
+Connection ~ 2300 2300
+Wire Wire Line
+	2300 2300 2300 2450
+Wire Wire Line
+	2900 2900 2300 2900
+Connection ~ 2300 2900
+Wire Wire Line
+	2300 2900 2300 2750
+Wire Wire Line
+	4300 2600 4650 2600
+Wire Wire Line
+	4950 2600 5300 2600
+$Comp
+L power:GND #PWR?
+U 1 1 5E829BE5
+P 5250 3100
+F 0 "#PWR?" H 5250 2850 50  0001 C CNN
+F 1 "GND" H 5255 2927 50  0000 C CNN
+F 2 "" H 5250 3100 50  0001 C CNN
+F 3 "" H 5250 3100 50  0001 C CNN
+	1    5250 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3100 5250 2800
+Wire Wire Line
+	5250 2800 5300 2800
+$Comp
+L power:GND #PWR?
+U 1 1 5E82BADB
+P 6350 3100
+F 0 "#PWR?" H 6350 2850 50  0001 C CNN
+F 1 "GND" H 6355 2927 50  0000 C CNN
+F 2 "" H 6350 3100 50  0001 C CNN
+F 3 "" H 6350 3100 50  0001 C CNN
+	1    6350 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3100 6350 2800
+Wire Wire Line
+	6350 2800 6300 2800
+Wire Wire Line
+	6350 2100 6350 2600
+Wire Wire Line
+	6350 2600 6300 2600
+$EndSCHEMATC
