@@ -1,11 +1,19 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 12V-24V_Converter
+D DC-DC Converter
+$ENDCMP
+#
 $CMP BMS_1S
 D 1S Battery Protection Board
 $ENDCMP
 #
 $CMP CASIO_ASIC
 D A simplified symbol for a casio watch asic (e.g. F-91w module 593)
+$ENDCMP
+#
+$CMP Caravan_13_Pin_Plug
+D 13 pin trailer plug
 $ENDCMP
 #
 $CMP DC-DC
@@ -16,12 +24,79 @@ $CMP DIP8
 D Unknown DIP8 IC
 $ENDCMP
 #
+$CMP Dometic_Fridge
+D Dometic 10 series absorber fridge
+$ENDCMP
+#
+$CMP Dometic_Power_Supply
+D Dometic SMP301 switching power supply
+$ENDCMP
+#
 $CMP FTDI232
 D FTDI232 USB to Serial Converter
 $ENDCMP
 #
+$CMP Ideal_Diode
+D Low voltage drop diode emulation circuit
+$ENDCMP
+#
+$CMP LiFePo4_BMS
+D Battery management system for LiFePo4 cells
+$ENDCMP
+#
+$CMP LiFePo4_Cell
+D LiFePo4 battery cell
+$ENDCMP
+#
+$CMP Relay_Automotive_SPDT
+D Automotive relay 30 A SPDT
+K spdt relay
+F https://gfinder.findernet.com/public/attachments/36/EN/S36EN.pdf
+$ENDCMP
+#
+$CMP Relay_Automotive_SPST
+D Automotive relay 30 A SPST
+K spst relay
+$ENDCMP
+#
 $CMP SiT1552
 D Smallest, Ultra-Low Power, 32.768 kHz MEMS TCXO
+$ENDCMP
+#
+$CMP Type2_Plug
+D IEC 62196 Type 2 male or female plug
+$ENDCMP
+#
+$CMP UPS_Priority_Switch
+D Priority switch module, switches between land and UPS power
+$ENDCMP
+#
+$CMP Victron_Battery_Monitor
+D Victron battery monitor
+$ENDCMP
+#
+$CMP Victron_Inverter_MultiPlus
+D Victron MultiPlus series inverter
+$ENDCMP
+#
+$CMP Victron_Inverter_Phoenix
+D Victron Phoenix series inverter
+$ENDCMP
+#
+$CMP Victron_Mains_Charger
+D Victron Blue Smart IP22 battery charger
+$ENDCMP
+#
+$CMP Victron_SmartShunt
+D DC-DC Converter
+$ENDCMP
+#
+$CMP Victron_Solar_Charger
+D Victron MPPT solar charger
+$ENDCMP
+#
+$CMP Votronic_Charging_Converter
+D Votronic battery to battery charging converter
 $ENDCMP
 #
 #End Doc Library

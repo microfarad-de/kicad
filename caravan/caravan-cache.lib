@@ -1,0 +1,395 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Conn_WallPlug_Earth
+#
+DEF Connector_Conn_WallPlug_Earth P 0 0 Y Y 1 F N
+F0 "P" 0 150 50 H V C BNN
+F1 "Connector_Conn_WallPlug_Earth" -200 0 50 V V C BNN
+F2 "" 400 0 50 H I C CNN
+F3 "" 400 0 50 H I C CNN
+DRAW
+A -125 0 150 -899 899 0 1 10 f -125 -150 -125 150
+C 100 -300 14 0 1 0 F
+P 2 0 1 20 -175 -100 -25 -100 N
+P 2 0 1 20 -175 0 20 0 N
+P 2 0 1 20 -175 100 -25 100 N
+P 2 0 1 10 -125 -150 -125 150 N
+P 2 0 1 0 -25 -100 100 -100 N
+P 2 0 1 0 -25 100 100 100 N
+P 2 0 1 8 60 -370 140 -370 N
+P 2 0 1 8 70 -390 130 -390 N
+P 2 0 1 8 80 -410 120 -410 N
+P 2 0 1 8 90 -430 110 -430 N
+P 2 0 1 8 100 -300 100 -350 N
+P 2 0 1 8 150 -350 50 -350 N
+P 4 0 1 0 100 -300 75 -300 75 0 -175 0 N
+X AC_P 1 300 100 200 L 50 50 1 1 w
+X AC_N 2 300 -100 200 L 50 50 1 1 w
+X EARTH 3 300 -300 200 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_CircuitBreaker_2P
+#
+DEF Device_CircuitBreaker_2P CB 0 20 Y Y 1 F N
+F0 "CB" 150 0 50 H V L CNN
+F1 "Device_CircuitBreaker_2P" 150 100 50 H V L CNN
+F2 "" -100 0 50 H I C CNN
+F3 "" -100 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -150 0 -90 0 N
+P 2 0 1 0 -100 -150 -200 150 N
+P 2 0 1 0 -70 0 -20 0 N
+P 2 0 1 0 0 0 50 0 N
+P 2 0 1 0 100 -200 100 -150 N
+P 2 0 1 0 100 -150 0 150 N
+P 2 1 1 0 -125 175 -75 125 N
+P 2 1 1 0 -100 -150 -100 -200 N
+P 2 1 1 0 -100 200 -100 150 N
+P 2 1 1 0 -75 175 -125 125 N
+P 2 1 1 0 75 175 125 125 N
+P 2 1 1 0 100 200 100 150 N
+P 2 1 1 0 125 175 75 125 N
+X ~ 1 -100 300 100 D 50 50 1 1 P
+X ~ 2 -100 -300 100 U 50 50 1 1 P
+X ~ 3 100 300 100 D 50 50 1 1 P
+X ~ 4 100 -300 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Fuse
+#
+DEF Device_Fuse F 0 0 N Y 1 F N
+F0 "F" 80 0 50 V V C CNN
+F1 "Device_Fuse" -75 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *Fuse*
+$ENDFPLIST
+DRAW
+S -30 -100 30 100 0 1 10 N
+P 2 0 1 0 0 100 0 -100 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Heater
+#
+DEF Device_Heater R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_Heater" -80 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -40 -100 40 100 0 1 10 N
+P 2 0 1 0 -40 60 40 60 N
+P 2 0 1 0 40 -60 -40 -60 N
+P 2 0 1 0 40 -20 -40 -20 N
+P 2 0 1 0 40 20 -40 20 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Lamp
+#
+DEF Device_Lamp LA 0 1 N N 1 F N
+F0 "LA" 25 150 50 H V L CNN
+F1 "Device_Lamp" 25 -150 50 H V L CNN
+F2 "" 0 100 50 V I C CNN
+F3 "" 0 100 50 V I C CNN
+DRAW
+C 0 0 100 0 1 0 N
+P 2 0 1 0 -70 70 70 -70 N
+P 2 0 1 0 70 70 -70 -70 N
+X - 1 0 -200 100 U 50 50 1 1 P
+X + 2 0 200 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R_Shunt
+#
+DEF Device_R_Shunt R 0 0 N Y 1 F N
+F0 "R" -175 0 50 V V C CNN
+F1 "Device_R_Shunt" -100 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*Shunt*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+P 2 0 1 0 0 -100 50 -100 N
+P 2 0 1 0 50 100 0 100 N
+X 1 1 0 200 100 D 50 50 1 1 P
+X 2 2 150 100 100 L 50 50 1 1 P
+X 3 3 150 -100 100 L 50 50 1 1 P
+X 4 4 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Solar_Cells
+#
+DEF Device_Solar_Cells SC 0 0 N N 1 F N
+F0 "SC" 100 100 50 H V L CNN
+F1 "Device_Solar_Cells" 100 0 50 H V L CNN
+F2 "" 0 60 50 V I C CNN
+F3 "" 0 60 50 V I C CNN
+DRAW
+S -80 -55 80 -65 0 1 0 F
+S -80 70 80 60 0 1 0 F
+S -52 -78 50 -98 0 1 0 F
+S -52 47 50 27 0 1 0 F
+P 2 0 1 0 -100 10 -160 70 N
+P 2 0 1 0 -100 90 -160 150 N
+P 2 0 1 0 0 -60 0 -50 N
+P 2 0 1 0 0 -40 0 -30 N
+P 2 0 1 0 0 -20 0 -10 N
+P 2 0 1 0 0 0 0 10 N
+P 2 0 1 0 0 20 0 30 N
+P 2 0 1 0 0 70 0 100 N
+P 2 0 1 10 10 105 50 105 N
+P 2 0 1 10 30 125 30 85 N
+P 3 0 1 0 -100 40 -100 10 -130 10 N
+P 3 0 1 0 -100 120 -100 90 -130 90 N
+X + 1 0 200 100 D 50 50 1 1 P
+X - 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Thermistor
+#
+DEF Device_Thermistor TH 0 0 N Y 1 F N
+F0 "TH" 100 50 50 V V C CNN
+F1 "Device_Thermistor" -100 0 50 V V C BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 100 40 -100 0 1 8 N
+P 5 0 1 10 -75 125 -75 75 75 -75 75 -125 75 -125 N
+X ~ 1 0 200 100 D 50 50 1 1 P
+X ~ 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_SPST
+#
+DEF Switch_SW_SPST SW 0 0 Y N 1 F N
+F0 "SW" 0 125 50 H V C CNN
+F1 "Switch_SW_SPST" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -80 0 20 0 0 0 N
+C 80 0 20 0 0 0 N
+P 2 0 0 0 -60 10 60 70 N
+X A 1 -200 0 100 R 50 50 1 1 P
+X B 2 200 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# microfarad-de_Caravan_13_Pin_Plug
+#
+DEF microfarad-de_Caravan_13_Pin_Plug U 0 40 Y Y 1 F N
+F0 "U" -350 -375 50 H I C CNN
+F1 "microfarad-de_Caravan_13_Pin_Plug" 0 -375 50 H V C CNN
+F2 "" 650 450 50 H I C CNN
+F3 "" 650 450 50 H I C CNN
+DRAW
+T 0 -125 150 50 0 0 0 "+12V (15/D+)" Normal 0 C C
+T 0 -50 350 50 0 0 0 "+12V (30)" Normal 0 C C
+T 0 -50 -50 50 0 0 0 PIN10-GND Normal 0 C C
+T 0 -25 -250 50 0 0 0 PIN9-GND Normal 0 C C
+S -450 450 450 -450 0 1 0 N
+X PIN10 ~ 550 150 100 L 50 50 1 1 O
+X PIN11 ~ 550 -50 100 L 50 50 1 1 O
+X PIN13 ~ 550 -250 100 L 50 50 1 1 O
+X PIN9 ~ 550 350 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# microfarad-de_Dometic_Fridge
+#
+DEF microfarad-de_Dometic_Fridge U 0 40 Y Y 1 F N
+F0 "U" 0 350 50 H I C CNN
+F1 "microfarad-de_Dometic_Fridge" 0 -125 50 H V C CNN
+F2 "" 550 350 50 H I C CNN
+F3 "" 550 350 50 H I C CNN
+DRAW
+T 0 -25 -725 50 0 0 0 12V Normal 0 C C
+T 0 -25 -375 50 0 0 0 12V Normal 0 C C
+T 0 -200 350 50 0 0 0 230V Normal 0 C C
+S -500 1050 500 -1100 0 1 0 N
+X Control+ ~ -600 -300 100 R 50 50 1 1 I
+X Control- ~ -600 -450 100 R 50 50 1 1 I
+X D+ ~ -600 -50 100 R 50 50 1 1 I
+X Heat+ ~ -600 -650 100 R 50 50 1 1 I
+X Heat- ~ -600 -800 100 R 50 50 1 1 I
+X L ~ -600 450 100 R 50 50 1 1 I
+X N ~ -600 350 100 R 50 50 1 1 I
+X PE ~ -600 250 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# microfarad-de_Dometic_Power_Supply
+#
+DEF microfarad-de_Dometic_Power_Supply U 0 40 Y Y 1 F N
+F0 "U" 0 300 50 H I C CNN
+F1 "microfarad-de_Dometic_Power_Supply" 0 0 50 H V C CNN
+F2 "" 550 175 50 H I C CNN
+F3 "" 550 175 50 H I C CNN
+DRAW
+T 0 0 -300 50 0 0 0 12V Normal 0 C C
+T 0 -600 -400 50 0 0 0 230V Normal 0 C C
+S -850 400 850 -600 0 1 0 N
+X BATT+ ~ -100 -700 100 U 50 50 1 1 I
+X GND ~ 100 -700 100 U 50 50 1 1 I
+X L ~ -700 -700 100 U 50 50 1 1 I
+X N ~ -600 -700 100 U 50 50 1 1 I
+X OUT1+ ~ 300 -700 100 U 50 50 1 1 O
+X OUT2+ ~ 400 -700 100 U 50 50 1 1 O
+X OUT3+ ~ 500 -700 100 U 50 50 1 1 O
+X OUT4+ ~ 600 -700 100 U 50 50 1 1 O
+X OUT5+ ~ 700 -700 100 U 50 50 1 1 O
+X PE ~ -500 -700 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# microfarad-de_LiFePo4_BMS
+#
+DEF microfarad-de_LiFePo4_BMS U 0 40 Y Y 1 F N
+F0 "U" 0 150 50 H I C CNN
+F1 "microfarad-de_LiFePo4_BMS" 0 50 50 H V C CNN
+F2 "" 550 400 50 H I C CNN
+F3 "" 550 400 50 H I C CNN
+DRAW
+S -400 200 400 -250 0 1 0 N
+X B- ~ -50 -350 100 U 50 50 1 1 I
+X B- ~ 200 -350 100 U 50 50 1 1 I
+X B1+ ~ -125 -350 100 U 50 50 1 1 I
+X B2+ ~ -200 -350 100 U 50 50 1 1 I
+X B3+ ~ -275 -350 100 U 50 50 1 1 I
+X B4+ ~ -350 -350 100 U 50 50 1 1 I
+X OUT- ~ 350 -350 100 U 50 50 1 1 O
+X TS ~ -500 50 100 R 50 50 1 1 I
+X TS ~ -500 150 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# microfarad-de_LiFePo4_Cell
+#
+DEF microfarad-de_LiFePo4_Cell U 0 40 Y Y 1 F N
+F0 "U" 0 400 50 H I C CNN
+F1 "microfarad-de_LiFePo4_Cell" 0 50 50 H V C CNN
+F2 "" 550 400 50 H I C CNN
+F3 "" 550 400 50 H I C CNN
+DRAW
+T 0 0 275 50 0 0 0 3.2V Normal 0 C C
+S -300 500 300 -100 0 1 0 N
+X + ~ -200 600 100 D 50 50 1 1 O
+X - ~ 200 600 100 D 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# microfarad-de_Victron_Battery_Monitor
+#
+DEF microfarad-de_Victron_Battery_Monitor U 0 40 Y Y 1 F N
+F0 "U" 0 450 50 H I C CNN
+F1 "microfarad-de_Victron_Battery_Monitor" 0 350 50 H V C CNN
+F2 "" -250 -300 50 H I C CNN
+F3 "" -250 -300 50 H I C CNN
+DRAW
+C 0 0 250 0 0 0 N
+S -150 50 150 -50 0 0 0 N
+X ~ ~ 0 -350 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# microfarad-de_Victron_Inverter_MultiPlus
+#
+DEF microfarad-de_Victron_Inverter_MultiPlus U 0 40 Y Y 1 F N
+F0 "U" 0 325 50 H I C CNN
+F1 "microfarad-de_Victron_Inverter_MultiPlus" 0 50 50 H V C CNN
+F2 "" 550 450 50 H I C CNN
+F3 "" 550 450 50 H I C CNN
+DRAW
+T 0 0 -425 50 0 0 0 12V Normal 0 C C
+T 0 300 550 50 0 0 0 "230V IN" Normal 0 C C
+T 0 -300 550 50 0 0 0 "230V OUT" Normal 0 C C
+S -600 750 600 -750 0 1 0 N
+X BATT+ ~ -100 -850 100 U 50 50 1 1 I
+X BATT- ~ 100 -850 100 U 50 50 1 1 I
+X Chassis_Earth ~ 450 -850 100 U 50 50 1 1 O
+X L ~ -400 850 100 D 50 50 1 1 O
+X L ~ 200 850 100 D 50 50 1 1 I
+X N ~ -300 850 100 D 50 50 1 1 O
+X N ~ 300 850 100 D 50 50 1 1 I
+X PE ~ -200 850 100 D 50 50 1 1 O
+X PE ~ 400 850 100 D 50 50 1 1 I
+X Temp ~ -450 -850 100 U 50 50 1 1 I
+X Temp ~ -350 -850 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# microfarad-de_Victron_Solar_Charger
+#
+DEF microfarad-de_Victron_Solar_Charger U 0 40 Y Y 1 F N
+F0 "U" 0 300 50 H I C CNN
+F1 "microfarad-de_Victron_Solar_Charger" 0 200 50 H V C CNN
+F2 "" 550 425 50 H I C CNN
+F3 "" 550 425 50 H I C CNN
+DRAW
+T 0 -325 -25 50 0 0 0 12V Normal 0 C C
+S -550 400 500 -350 0 1 0 N
+X BATT+ ~ -400 -450 100 U 50 50 1 1 O
+X BATT- ~ -250 -450 100 U 50 50 1 1 O
+X LOAD+ ~ 350 -450 100 U 50 50 1 1 O
+X LOAD- ~ 200 -450 100 U 50 50 1 1 O
+X PV+ ~ 50 -450 100 U 50 50 1 1 I
+X PV- ~ -100 -450 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# microfarad-de_Votronic_Charging_Converter
+#
+DEF microfarad-de_Votronic_Charging_Converter U 0 40 Y Y 1 F N
+F0 "U" 0 175 50 H I C CNN
+F1 "microfarad-de_Votronic_Charging_Converter" 0 75 50 H V C CNN
+F2 "" 550 425 50 H I C CNN
+F3 "" 550 425 50 H I C CNN
+DRAW
+T 0 -425 -125 50 0 0 0 12V Normal 0 C C
+S -600 400 600 -350 0 1 0 N
+X D+ ~ 250 -450 100 U 50 50 1 1 I
+X IN+ ~ -500 -450 100 U 50 50 1 1 I
+X IN- ~ -350 -450 100 U 50 50 1 1 I
+X OUT+ ~ -50 -450 100 U 50 50 1 1 O
+X OUT- ~ -200 -450 100 U 50 50 1 1 O
+X TS ~ 400 -450 100 U 50 50 1 1 I
+X TS ~ 500 -450 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# power_Earth
+#
+DEF power_Earth #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_Earth" 0 -150 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -25 -75 25 -75 N
+P 2 0 1 0 -5 -100 5 -100 N
+P 2 0 1 0 0 -50 0 0 N
+P 2 0 1 0 50 -50 -50 -50 N
+X Earth 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library
