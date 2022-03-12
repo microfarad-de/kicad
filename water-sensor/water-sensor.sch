@@ -167,13 +167,13 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x02 J2
 U 1 1 622EA49E
-P 1850 2000
+P 1850 1900
 F 0 "J2" H 2175 1900 50  0000 C CNN
-F 1 "Probe" H 2175 2000 50  0000 C CNN
-F 2 "" H 1850 2000 50  0001 C CNN
-F 3 "~" H 1850 2000 50  0001 C CNN
-	1    1850 2000
-	-1   0    0    1   
+F 1 "Probe" H 2175 1800 50  0000 C CNN
+F 2 "" H 1850 1900 50  0001 C CNN
+F 3 "~" H 1850 1900 50  0001 C CNN
+	1    1850 1900
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x03 J1
