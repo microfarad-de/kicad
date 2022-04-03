@@ -1,0 +1,521 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 8268 5827
+encoding utf-8
+Sheet 1 1
+Title "Smart Water Pump"
+Date "2022-04-03"
+Rev ""
+Comp "µF"
+Comment1 "www.github.com/microfarad-de/smart-pump"
+Comment2 "www.microfarad.de"
+Comment3 "Please visit:"
+Comment4 "Copyright (C) 2022, Karim Hraibi"
+$EndDescr
+$Comp
+L microfarad-de:Arduino_Pro_Mini U2
+U 1 1 6249FA11
+P 4375 1925
+F 0 "U2" H 4375 2890 50  0000 C CNN
+F 1 "Arduino_Pro_Mini" H 4375 2799 50  0000 C CNN
+F 2 "" H 4475 2325 50  0001 C CNN
+F 3 "" H 4475 2325 50  0001 C CNN
+	1    4375 1925
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 624A13A7
+P 3650 3375
+F 0 "C3" H 3765 3421 50  0000 L CNN
+F 1 "100nF" H 3765 3330 50  0000 L CNN
+F 2 "" H 3688 3225 50  0001 C CNN
+F 3 "~" H 3650 3375 50  0001 C CNN
+	1    3650 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 624A1E9E
+P 1150 1475
+F 0 "C1" H 1268 1521 50  0000 L CNN
+F 1 "10µF" H 1268 1430 50  0000 L CNN
+F 2 "" H 1188 1325 50  0001 C CNN
+F 3 "~" H 1150 1475 50  0001 C CNN
+	1    1150 1475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GDS Q2
+U 1 1 624A418B
+P 6450 1950
+F 0 "Q2" H 6655 1904 50  0000 L CNN
+F 1 "IRF5305" H 6655 1995 50  0000 L CNN
+F 2 "" H 6650 2050 50  0001 C CNN
+F 3 "~" H 6450 1950 50  0001 C CNN
+	1    6450 1950
+	1    0    0    1   
+$EndComp
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 624A63F8
+P 2675 3200
+F 0 "SW1" V 2675 3112 50  0000 R CNN
+F 1 "SW_SPST" V 2630 3112 50  0001 R CNN
+F 2 "" H 2675 3200 50  0001 C CNN
+F 3 "~" H 2675 3200 50  0001 C CNN
+	1    2675 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Regulator_Linear:AZ1117-5.0 U1
+U 1 1 624A95B3
+P 1725 1325
+F 0 "U1" H 1725 1567 50  0000 C CNN
+F 1 "AZ1117-5.0" H 1725 1476 50  0000 C CNN
+F 2 "" H 1725 1575 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 1725 1325 50  0001 C CNN
+	1    1725 1325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR05
+U 1 1 624AAD51
+P 2275 1225
+F 0 "#PWR05" H 2275 1075 50  0001 C CNN
+F 1 "+5V" H 2290 1398 50  0000 C CNN
+F 2 "" H 2275 1225 50  0001 C CNN
+F 3 "" H 2275 1225 50  0001 C CNN
+	1    2275 1225
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR03
+U 1 1 624AB5EA
+P 1150 1225
+F 0 "#PWR03" H 1150 1075 50  0001 C CNN
+F 1 "+12V" H 1165 1398 50  0000 C CNN
+F 2 "" H 1150 1225 50  0001 C CNN
+F 3 "" H 1150 1225 50  0001 C CNN
+	1    1150 1225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 624AE719
+P 2275 1475
+F 0 "C2" H 2393 1521 50  0000 L CNN
+F 1 "10µF" H 2393 1430 50  0000 L CNN
+F 2 "" H 2313 1325 50  0001 C CNN
+F 3 "~" H 2275 1475 50  0001 C CNN
+	1    2275 1475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2025 1325 2275 1325
+Connection ~ 2275 1325
+Wire Wire Line
+	1425 1325 1150 1325
+Wire Wire Line
+	2275 1325 2275 1225
+Wire Wire Line
+	1150 1225 1150 1325
+Connection ~ 1150 1325
+$Comp
+L power:GND #PWR04
+U 1 1 624AA5A3
+P 1725 1725
+F 0 "#PWR04" H 1725 1475 50  0001 C CNN
+F 1 "GND" H 1730 1552 50  0000 C CNN
+F 2 "" H 1725 1725 50  0001 C CNN
+F 3 "" H 1725 1725 50  0001 C CNN
+	1    1725 1725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1725 1625 1725 1675
+Wire Wire Line
+	2275 1625 2275 1675
+Wire Wire Line
+	2275 1675 1725 1675
+Connection ~ 1725 1675
+Wire Wire Line
+	1725 1675 1725 1725
+Wire Wire Line
+	1150 1625 1150 1675
+Wire Wire Line
+	1150 1675 1725 1675
+$Comp
+L Connector:Screw_Terminal_01x04 J1
+U 1 1 624AC3B4
+P 1150 2775
+F 0 "J1" H 1068 3000 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 1068 3001 50  0001 C CNN
+F 2 "" H 1150 2775 50  0001 C CNN
+F 3 "~" H 1150 2775 50  0001 C CNN
+	1    1150 2775
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR01
+U 1 1 624B860C
+P 1475 2600
+F 0 "#PWR01" H 1475 2450 50  0001 C CNN
+F 1 "+12V" H 1490 2773 50  0000 C CNN
+F 2 "" H 1475 2600 50  0001 C CNN
+F 3 "" H 1475 2600 50  0001 C CNN
+	1    1475 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2775 1475 2775
+Wire Wire Line
+	1475 2775 1475 2600
+$Comp
+L Device:R R5
+U 1 1 624BB180
+P 6250 3375
+F 0 "R5" V 6150 3175 50  0000 L CNN
+F 1 "1R/1W" V 6150 3325 50  0000 L CNN
+F 2 "" V 6180 3375 50  0001 C CNN
+F 3 "~" H 6250 3375 50  0001 C CNN
+	1    6250 3375
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 2975 2    50   Input ~ 0
+M-
+Text GLabel 1800 2875 2    50   Input ~ 0
+M+
+Wire Wire Line
+	1350 2975 1800 2975
+Wire Wire Line
+	1350 2875 1800 2875
+$Comp
+L power:GND #PWR02
+U 1 1 624C1205
+P 1575 2700
+F 0 "#PWR02" H 1575 2450 50  0001 C CNN
+F 1 "GND" H 1725 2625 50  0000 C CNN
+F 2 "" H 1575 2700 50  0001 C CNN
+F 3 "" H 1575 2700 50  0001 C CNN
+	1    1575 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2675 1575 2675
+Wire Wire Line
+	1575 2675 1575 2700
+$Comp
+L Device:R R6
+U 1 1 624C399C
+P 6450 3375
+F 0 "R6" V 6350 3175 50  0000 L CNN
+F 1 "1R/1W" V 6350 3325 50  0000 L CNN
+F 2 "" V 6380 3375 50  0001 C CNN
+F 3 "~" H 6450 3375 50  0001 C CNN
+	1    6450 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 624C3E95
+P 6650 3375
+F 0 "R7" V 6550 3175 50  0000 L CNN
+F 1 "1R/1W" V 6550 3325 50  0000 L CNN
+F 2 "" V 6580 3375 50  0001 C CNN
+F 3 "~" H 6650 3375 50  0001 C CNN
+	1    6650 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 624C41A7
+P 6850 3375
+F 0 "R8" V 6750 3175 50  0000 L CNN
+F 1 "1R/1W" V 6750 3325 50  0000 L CNN
+F 2 "" V 6780 3375 50  0001 C CNN
+F 3 "~" H 6850 3375 50  0001 C CNN
+	1    6850 3375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3225 6250 3075
+Wire Wire Line
+	6250 3075 6450 3075
+Wire Wire Line
+	6850 3075 6850 3225
+Wire Wire Line
+	6450 3225 6450 3075
+Connection ~ 6450 3075
+Wire Wire Line
+	6450 3075 6550 3075
+Wire Wire Line
+	6650 3225 6650 3075
+Connection ~ 6650 3075
+Wire Wire Line
+	6650 3075 6850 3075
+Wire Wire Line
+	6250 3525 6250 3650
+Wire Wire Line
+	6250 3650 6450 3650
+Wire Wire Line
+	6850 3650 6850 3525
+Wire Wire Line
+	6650 3525 6650 3650
+Connection ~ 6650 3650
+Wire Wire Line
+	6650 3650 6850 3650
+Wire Wire Line
+	6450 3525 6450 3650
+Connection ~ 6450 3650
+Wire Wire Line
+	6450 3650 6550 3650
+$Comp
+L power:GND #PWR011
+U 1 1 624D1273
+P 6550 3750
+F 0 "#PWR011" H 6550 3500 50  0001 C CNN
+F 1 "GND" H 6555 3577 50  0000 C CNN
+F 2 "" H 6550 3750 50  0001 C CNN
+F 3 "" H 6550 3750 50  0001 C CNN
+	1    6550 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3750 6550 3650
+Connection ~ 6550 3650
+Wire Wire Line
+	6550 3650 6650 3650
+Text GLabel 6925 2275 2    50   Output ~ 0
+M+
+Text GLabel 6925 2750 2    50   Output ~ 0
+M-
+Wire Wire Line
+	6550 3075 6550 2750
+Wire Wire Line
+	6550 2750 6925 2750
+Connection ~ 6550 3075
+Wire Wire Line
+	6550 3075 6650 3075
+$Comp
+L Device:R R4
+U 1 1 624DB492
+P 6225 1750
+F 0 "R4" H 6295 1796 50  0000 L CNN
+F 1 "10K" H 6295 1705 50  0000 L CNN
+F 2 "" V 6155 1750 50  0001 C CNN
+F 3 "~" H 6225 1750 50  0001 C CNN
+	1    6225 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC337 Q1
+U 1 1 624DC755
+P 5650 2325
+F 0 "Q1" H 5841 2371 50  0000 L CNN
+F 1 "BC337" H 5841 2280 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5850 2250 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 5650 2325 50  0001 L CNN
+	1    5650 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 624DFF01
+P 5200 2325
+F 0 "R3" V 5300 2250 50  0000 C CNN
+F 1 "10K" V 5300 2400 50  0000 C CNN
+F 2 "" V 5130 2325 50  0001 C CNN
+F 3 "~" H 5200 2325 50  0001 C CNN
+	1    5200 2325
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4875 2325 5050 2325
+Wire Wire Line
+	5350 2325 5450 2325
+$Comp
+L power:GND #PWR09
+U 1 1 624E24FE
+P 5750 2575
+F 0 "#PWR09" H 5750 2325 50  0001 C CNN
+F 1 "GND" H 5755 2402 50  0000 C CNN
+F 2 "" H 5750 2575 50  0001 C CNN
+F 3 "" H 5750 2575 50  0001 C CNN
+	1    5750 2575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2575 5750 2525
+Wire Wire Line
+	6225 1600 6225 1575
+Wire Wire Line
+	6225 1575 6550 1575
+Wire Wire Line
+	6550 1575 6550 1750
+$Comp
+L power:+12V #PWR010
+U 1 1 624EF9D8
+P 6550 1225
+F 0 "#PWR010" H 6550 1075 50  0001 C CNN
+F 1 "+12V" H 6565 1398 50  0000 C CNN
+F 2 "" H 6550 1225 50  0001 C CNN
+F 3 "" H 6550 1225 50  0001 C CNN
+	1    6550 1225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 1225 6550 1575
+Connection ~ 6550 1575
+$Comp
+L Diode:1N4007 D2
+U 1 1 624F2CB9
+P 6550 2500
+F 0 "D2" V 6504 2580 50  0000 L CNN
+F 1 "1N4007" V 6595 2580 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6550 2325 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 6550 2500 50  0001 C CNN
+	1    6550 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 2750 6550 2650
+Connection ~ 6550 2750
+Wire Wire Line
+	6550 2350 6550 2275
+Wire Wire Line
+	6550 2275 6925 2275
+Wire Wire Line
+	6550 2275 6550 2150
+Connection ~ 6550 2275
+Wire Wire Line
+	6250 1950 6225 1950
+Wire Wire Line
+	6225 1950 6225 1900
+Wire Wire Line
+	6225 1950 5750 1950
+Wire Wire Line
+	5750 1950 5750 2125
+Connection ~ 6225 1950
+Wire Wire Line
+	3875 1725 3650 1725
+$Comp
+L Device:R R2
+U 1 1 62503BEE
+P 4100 3075
+F 0 "R2" V 4200 3000 50  0000 C CNN
+F 1 "10K" V 4200 3150 50  0000 C CNN
+F 2 "" V 4030 3075 50  0001 C CNN
+F 3 "~" H 4100 3075 50  0001 C CNN
+	1    4100 3075
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 3075 3950 3075
+Wire Wire Line
+	3650 1725 3650 3075
+Connection ~ 3650 3075
+Wire Wire Line
+	3650 3075 3650 3225
+$Comp
+L power:GND #PWR07
+U 1 1 62508748
+P 3650 3750
+F 0 "#PWR07" H 3650 3500 50  0001 C CNN
+F 1 "GND" H 3655 3577 50  0000 C CNN
+F 2 "" H 3650 3750 50  0001 C CNN
+F 3 "" H 3650 3750 50  0001 C CNN
+	1    3650 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3525 3650 3625
+Wire Wire Line
+	4250 3075 6250 3075
+Connection ~ 6250 3075
+Wire Wire Line
+	3875 2325 3100 2325
+Connection ~ 3650 3625
+Wire Wire Line
+	3650 3625 3650 3750
+Wire Wire Line
+	2675 3625 2675 3400
+Wire Wire Line
+	2675 3000 2675 2225
+Wire Wire Line
+	2675 2225 3875 2225
+Wire Wire Line
+	3100 2325 3100 2575
+$Comp
+L Device:R R1
+U 1 1 6251750F
+P 3100 2725
+F 0 "R1" H 3170 2771 50  0000 L CNN
+F 1 "2.2K" H 3170 2680 50  0000 L CNN
+F 2 "" V 3030 2725 50  0001 C CNN
+F 3 "~" H 3100 2725 50  0001 C CNN
+	1    3100 2725
+	1    0    0    -1  
+$EndComp
+Connection ~ 3100 3625
+Wire Wire Line
+	3100 3625 2675 3625
+Wire Wire Line
+	3650 3625 3100 3625
+Wire Wire Line
+	3100 2875 3100 3025
+Wire Wire Line
+	3100 3625 3100 3325
+$Comp
+L Device:LED D1
+U 1 1 624A6BC4
+P 3100 3175
+F 0 "D1" V 3139 3057 50  0000 R CNN
+F 1 "LED" V 3048 3057 50  0000 R CNN
+F 2 "" H 3100 3175 50  0001 C CNN
+F 3 "~" H 3100 3175 50  0001 C CNN
+	1    3100 3175
+	0    -1   -1   0   
+$EndComp
+Text Notes 6100 3000 0    50   ~ 0
+Shunt
+Wire Notes Line
+	6075 3725 6975 3725
+Wire Notes Line
+	6975 2900 6075 2900
+Wire Notes Line
+	6975 2900 6975 3725
+Wire Notes Line
+	6075 2900 6075 3725
+$Comp
+L power:+5V #PWR08
+U 1 1 6253FA6A
+P 3725 1225
+F 0 "#PWR08" H 3725 1075 50  0001 C CNN
+F 1 "+5V" H 3740 1398 50  0000 C CNN
+F 2 "" H 3725 1225 50  0001 C CNN
+F 3 "" H 3725 1225 50  0001 C CNN
+	1    3725 1225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3725 1525 3875 1525
+$Comp
+L power:GND #PWR06
+U 1 1 625417BF
+P 3500 1500
+F 0 "#PWR06" H 3500 1250 50  0001 C CNN
+F 1 "GND" H 3505 1327 50  0000 C CNN
+F 2 "" H 3500 1500 50  0001 C CNN
+F 3 "" H 3500 1500 50  0001 C CNN
+	1    3500 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3875 1325 3500 1325
+Wire Wire Line
+	3500 1325 3500 1500
+Wire Wire Line
+	3725 1225 3725 1525
+$EndSCHEMATC
