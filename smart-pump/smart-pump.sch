@@ -69,17 +69,6 @@ F 3 "~" H 2675 3200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Regulator_Linear:AZ1117-5.0 U1
-U 1 1 624A95B3
-P 1725 1325
-F 0 "U1" H 1725 1567 50  0000 C CNN
-F 1 "AZ1117-5.0" H 1725 1476 50  0000 C CNN
-F 2 "" H 1725 1575 50  0001 C CIN
-F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 1725 1325 50  0001 C CNN
-	1    1725 1325
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR05
 U 1 1 624AAD51
 P 2275 1225
@@ -518,4 +507,15 @@ Wire Wire Line
 	3500 1325 3500 1500
 Wire Wire Line
 	3725 1225 3725 1525
+$Comp
+L Regulator_Linear:AMS1117-5.0 U1
+U 1 1 6259A42F
+P 1725 1325
+F 0 "U1" H 1725 1567 50  0000 C CNN
+F 1 "AMS1117-5.0" H 1725 1476 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 1725 1525 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 1825 1075 50  0001 C CNN
+	1    1725 1325
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
