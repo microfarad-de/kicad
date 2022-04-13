@@ -5,7 +5,7 @@ $Descr User 8268 5827
 encoding utf-8
 Sheet 1 1
 Title "Smart Water Pump"
-Date "2022-04-11"
+Date "2022-04-12"
 Rev ""
 Comp "µF"
 Comment1 "www.github.com/microfarad-de/smart-pump"
@@ -523,7 +523,7 @@ L Device:R R1
 U 1 1 6255CFA6
 P 3375 1425
 F 0 "R1" H 3445 1471 50  0000 L CNN
-F 1 "13kΩ" H 3445 1380 50  0000 L CNN
+F 1 "12kΩ" H 3445 1380 50  0000 L CNN
 F 2 "" V 3305 1425 50  0001 C CNN
 F 3 "~" H 3375 1425 50  0001 C CNN
 	1    3375 1425
