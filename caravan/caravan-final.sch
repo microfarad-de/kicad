@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "Autark-Schaltplan"
-Date "2021-11-10"
+Date "2022-04-17"
 Rev ""
 Comp ""
 Comment1 "Fendt Bianco Activ 390 FHS Autark-Schaltplan"
@@ -733,8 +733,8 @@ Wire Wire Line
 	6675 3900 6775 3900
 Wire Wire Line
 	6650 3900 6575 3900
-Text Notes 7000 7000 0    50   ~ 0
-Truma C4 Steuerung
+Text Notes 7000 7350 0    50   ~ 0
+Wasserpumpe/Toilette/Herd
 $Comp
 L Device:Fuse F?
 U 1 1 60B723DB
@@ -784,7 +784,7 @@ Wire Wire Line
 	4350 7600 4375 7600
 Wire Wire Line
 	8300 7600 8250 7475
-Text Notes 7000 6825 0    50   ~ 0
+Text Notes 7000 6925 0    50   ~ 0
 Abwassertank-Heizung
 $Comp
 L Device:Heater R?
@@ -1170,7 +1170,7 @@ Beleuchtung Kreis 1/2
 Text Notes 14750 4325 0    50   ~ 0
 Beleuchtung Kreis 3
 Text Notes 14750 4475 0    50   ~ 0
-Wasserpumpe/Toilette/Herd
+Truma C4 Steuerung
 Text Notes 14750 4675 0    50   ~ 0
 Kühlschrank
 Wire Notes Line
@@ -1247,7 +1247,7 @@ Bettkasten
 Text Notes 3050 1550 0    79   ~ 0
 Kleiderschrank
 Wire Wire Line
-	4350 7600 4350 7525
+	4350 7600 4350 7475
 Connection ~ 4350 7600
 Wire Wire Line
 	4525 7600 4525 7550
@@ -1259,10 +1259,8 @@ Wire Wire Line
 Wire Wire Line
 	5725 7075 5900 7075
 Wire Wire Line
-	5900 7075 5900 7525
+	5900 7075 5900 7475
 Connection ~ 5750 6750
-Wire Wire Line
-	5925 7550 5925 7050
 Wire Wire Line
 	5925 7050 5750 7050
 Wire Wire Line
@@ -1272,15 +1270,13 @@ Wire Wire Line
 Wire Wire Line
 	6150 7050 5950 7050
 Wire Wire Line
-	5950 7050 5950 7550
-Wire Wire Line
 	6150 6750 6175 6750
 Wire Wire Line
 	6175 6750 6175 7075
 Wire Wire Line
 	6175 7075 5975 7075
 Wire Wire Line
-	5975 7075 5975 7525
+	5975 7075 5975 7475
 Wire Wire Line
 	6150 6600 6200 6600
 Wire Wire Line
@@ -1288,38 +1284,34 @@ Wire Wire Line
 Wire Wire Line
 	6200 7100 6000 7100
 Wire Wire Line
-	6000 7100 6000 7500
+	6000 7100 6000 7450
 Wire Wire Line
-	6000 7500 6375 7500
+	6000 7450 6325 7450
 Wire Wire Line
-	6375 7500 6375 6450
+	6325 7450 6325 6450
 Wire Wire Line
-	6375 6450 6400 6450
+	6325 6450 6400 6450
 Wire Wire Line
-	5975 7525 6400 7525
+	5975 7475 6350 7475
 Wire Wire Line
-	6400 7525 6400 6775
+	6350 7475 6350 6875
 Wire Wire Line
-	6400 6775 6425 6775
+	6350 6875 6425 6875
 Wire Wire Line
-	6625 7450 6625 6975
+	6625 7450 6625 7325
 Wire Wire Line
-	6625 6975 6975 6975
+	6625 7325 6975 7325
 Wire Wire Line
 	6625 7450 8275 7450
 Wire Wire Line
 	6600 7475 8250 7475
 Wire Wire Line
-	6600 6800 6975 6800
+	6600 6900 6975 6900
 Wire Wire Line
-	6600 6800 6600 7475
+	6600 6900 6600 7475
 Wire Wire Line
-	5950 7550 6425 7550
-Wire Wire Line
-	6425 7550 6425 6950
-Wire Wire Line
-	6425 6950 6450 6950
-Text Label 5900 7200 3    39   ~ 0
+	6425 7550 6425 7300
+Text Label 5900 7100 3    39   ~ 0
 5x1.5mm2
 Wire Wire Line
 	8275 7725 7925 7725
@@ -1329,18 +1321,13 @@ Connection ~ 6400 6450
 Wire Wire Line
 	6400 6450 6650 6450
 Wire Wire Line
-	6425 6775 6425 6800
-Connection ~ 6425 6775
+	6425 6875 6425 6900
+Connection ~ 6425 6875
 Wire Wire Line
-	6425 6775 6975 6775
-Wire Wire Line
-	6450 6950 6450 6975
-Connection ~ 6450 6950
-Wire Wire Line
-	6450 6950 6975 6950
-Text Label 6625 6775 0    39   ~ 0
+	6425 6875 6975 6875
+Text Label 6625 6875 0    39   ~ 0
 2x2.5mm2
-Text Label 6625 6950 0    39   ~ 0
+Text Label 6625 7300 0    39   ~ 0
 2x2.5mm2
 Wire Wire Line
 	14725 4300 14625 4300
@@ -1385,12 +1372,12 @@ Wire Wire Line
 Wire Wire Line
 	4825 3900 4825 6150
 Wire Wire Line
-	4575 5800 4575 5450
-Connection ~ 4575 5450
+	4575 5800 4575 5500
+Connection ~ 4575 5500
 Wire Wire Line
-	4575 5450 4625 5500
+	4575 5500 4625 5550
 Wire Wire Line
-	4625 5500 4625 5800
+	4625 5550 4625 5800
 Wire Wire Line
 	10350 7400 12525 7400
 Wire Wire Line
@@ -1400,8 +1387,6 @@ Wire Wire Line
 Wire Wire Line
 	10375 5800 10375 7375
 Connection ~ 12525 7250
-Wire Wire Line
-	3575 3950 3575 5450
 Text Label 3125 5800 0    50   ~ 0
 2x4mm2
 Wire Wire Line
@@ -1433,8 +1418,6 @@ Wire Notes Line
 	13775 5025 13775 5300
 Wire Wire Line
 	1775 5725 2125 5725
-Wire Wire Line
-	3575 5450 4575 5450
 Wire Wire Line
 	3600 3900 3300 3900
 Wire Wire Line
@@ -1540,9 +1523,7 @@ Wire Wire Line
 Wire Wire Line
 	4325 3950 4325 5275
 Wire Wire Line
-	4350 7525 5900 7525
-Wire Wire Line
-	4525 7550 5925 7550
+	4350 7475 5900 7475
 Wire Wire Line
 	5400 3900 5400 8325
 Wire Wire Line
@@ -1554,7 +1535,7 @@ Wire Wire Line
 Wire Wire Line
 	5300 8325 5300 8425
 Wire Wire Line
-	4575 5350 4575 5450
+	4575 5350 4575 5500
 Wire Wire Line
 	4675 4050 4675 4300
 $Comp
@@ -1594,10 +1575,6 @@ Wire Wire Line
 Connection ~ 4675 5425
 Wire Wire Line
 	4675 5825 4675 5425
-Wire Wire Line
-	4625 5375 4575 5450
-Wire Wire Line
-	5250 5375 4625 5375
 Wire Wire Line
 	2150 5075 4950 5075
 Wire Wire Line
@@ -1644,8 +1621,8 @@ Wire Notes Line
 	5325 4675 5325 4050
 Text Notes 4950 4750 0    39   ~ 0
 Transistor
-Text Notes 3200 2875 0    50   ~ 0
-Notizen zum Votronic Ladewandler:\nDas Relais unterbindet den Rückladezweig und verhindert damit das\nEinschalten vom ATC ohne Zugfahrzeug.\nDer Transistor aktiviert den Ladevorgang nur wenn ATC-Schaltplus UND \nZugfahrzeug-D+ beide aktiv sind. Damit wird der Ladevorgang unterbrochen,\nwenn der Motor aus oder die ATC-Bremse aktiv ist. \nDie Ideale Diode ermöglicht das gleichzeitige Nutzen der Shaltplus- und \nDauerplus-Leitungen zum Laden der Batterie. Dies ermöglicht die\noptimale Nutzung des Leitungsquerschnitts.
+Text Notes 3050 2700 0    50   ~ 0
+Notizen zum Votronic Ladewandler:\nDas Relais unterbindet den Rückladezweig und verhindert damit das\nEinschalten vom ATC ohne Zugfahrzeug.\nDer Transistor aktiviert den Ladevorgang nur wenn ATC-Schaltplus UND \nZugfahrzeug-D+ beide aktiv sind. Damit wird der Ladevorgang unterbrochen,\nwenn der Motor aus oder die ATC-Bremse aktiv ist. \nDie Ideale Diode ermöglicht das gleichzeitige Nutzen der Shaltplus- und \nDauerplus-Leitungen zum Laden der Batterie. Dies ermöglicht die\noptimale Nutzung des Leitungsquerschnitts.\nDer Ladewandler kann mittels eines Schalters deaktiviert werden.
 Wire Wire Line
 	4950 5075 4975 5075
 Connection ~ 4950 5075
@@ -1691,4 +1668,29 @@ Text Label 3000 5075 0    50   ~ 0
 2x2.5mm2
 Text Label 4825 4900 1    50   ~ 0
 4mm2|6mm2
+Wire Wire Line
+	4525 7550 6425 7550
+Wire Wire Line
+	6425 7300 6975 7300
+Wire Wire Line
+	3575 3950 3575 5375
+Wire Wire Line
+	3575 5375 4500 5375
+Wire Wire Line
+	4500 7450 5925 7450
+Wire Wire Line
+	5925 7450 5925 7050
+Wire Wire Line
+	5950 7050 5950 7425
+Wire Wire Line
+	5950 7425 4525 7425
+Wire Wire Line
+	4500 5375 4500 7450
+Connection ~ 4500 5375
+Wire Wire Line
+	4500 5375 5250 5375
+Wire Wire Line
+	4525 5550 4575 5500
+Wire Wire Line
+	4525 5550 4525 7425
 $EndSCHEMATC
