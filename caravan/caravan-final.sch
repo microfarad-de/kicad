@@ -202,11 +202,7 @@ Wire Wire Line
 Wire Wire Line
 	11200 6575 12525 6575
 Wire Wire Line
-	8550 6150 11425 6150
-Wire Wire Line
-	11425 6150 11425 5150
-Wire Wire Line
-	11400 6125 11400 5125
+	11400 6025 11400 5125
 $Comp
 L power:Earth #PWR?
 U 1 1 60E33B56
@@ -440,16 +436,14 @@ $EndComp
 $Comp
 L Device:Fuse F?
 U 1 1 6048F6FE
-P 4175 8075
-F 0 "F?" H 4235 8121 50  0001 L CNN
-F 1 "30A Maxi" V 4100 7900 50  0000 L CNN
-F 2 "" V 4105 8075 50  0001 C CNN
-F 3 "~" H 4175 8075 50  0001 C CNN
-	1    4175 8075
+P 4000 8075
+F 0 "F?" H 4060 8121 50  0001 L CNN
+F 1 "30A Maxi" V 3925 7900 50  0000 L CNN
+F 2 "" V 3930 8075 50  0001 C CNN
+F 3 "~" H 4000 8075 50  0001 C CNN
+	1    4000 8075
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8550 6150 8550 7600
 Wire Wire Line
 	8525 7575 8550 7600
 Connection ~ 8550 7600
@@ -488,9 +482,9 @@ Wire Wire Line
 	5150 9250 5150 9225
 Text Label 5775 9200 0    39   ~ 0
 Busbar
-Text Label 4175 8450 1    39   ~ 0
-4mm2
-Text Label 4175 7875 1    39   ~ 0
+Text Label 4175 8475 1    39   ~ 0
+2.5mm2
+Text Label 4000 7900 1    39   ~ 0
 6mm2
 Text Label 8525 7050 3    50   ~ 0
 Wago221-615
@@ -540,8 +534,6 @@ Wire Wire Line
 	9800 4000 8875 4000
 Wire Wire Line
 	9850 4050 8725 4050
-Wire Wire Line
-	4175 8225 4175 8550
 Wire Wire Line
 	4200 8525 4175 8550
 Text Label 4350 8250 3    39   ~ 0
@@ -678,7 +670,7 @@ Text Label 4200 9250 0    50   ~ 0
 16mm2
 Connection ~ 4175 8550
 Wire Wire Line
-	4175 8550 4200 8575
+	4175 8550 4150 8575
 Wire Wire Line
 	4200 8525 4350 8525
 Wire Wire Line
@@ -900,7 +892,7 @@ Wire Wire Line
 	8150 8725 8125 8725
 Wire Wire Line
 	8300 8175 8300 7600
-Text Label 9775 6125 0    50   ~ 0
+Text Label 9775 6025 0    50   ~ 0
 2x6mm2
 $Comp
 L microfarad-de:ALKO_ATC U?
@@ -1317,8 +1309,6 @@ Wire Wire Line
 Wire Wire Line
 	8575 3900 8575 7575
 Wire Wire Line
-	8550 3900 8550 6025
-Wire Wire Line
 	6650 3900 6650 6450
 Wire Wire Line
 	6675 3900 6675 6450
@@ -1649,12 +1639,12 @@ Wire Wire Line
 $Comp
 L Device:Fuse F?
 U 1 1 626DA299
-P 4000 8075
-F 0 "F?" H 4060 8121 50  0001 L CNN
-F 1 "30A Maxi" V 3925 7900 50  0000 L CNN
-F 2 "" V 3930 8075 50  0001 C CNN
-F 3 "~" H 4000 8075 50  0001 C CNN
-	1    4000 8075
+P 4175 8075
+F 0 "F?" H 4235 8121 50  0001 L CNN
+F 1 "20A" V 4100 8000 50  0000 L CNN
+F 2 "" V 4105 8075 50  0001 C CNN
+F 3 "~" H 4175 8075 50  0001 C CNN
+	1    4175 8075
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1671,23 +1661,11 @@ $EndComp
 Wire Wire Line
 	3825 8550 3825 8225
 Wire Wire Line
-	4000 8225 4000 8525
-Wire Wire Line
-	4000 8525 4150 8525
-Wire Wire Line
-	4175 8550 4150 8525
-Wire Wire Line
 	3825 8550 4175 8550
-Wire Wire Line
-	4000 6025 8550 6025
-Wire Wire Line
-	4000 6025 4000 7925
 Wire Wire Line
 	3825 7925 3825 5925
 Wire Wire Line
 	3825 5925 4850 5925
-Wire Wire Line
-	4175 6125 11400 6125
 Wire Wire Line
 	4825 5900 4875 5900
 Wire Wire Line
@@ -1700,37 +1678,63 @@ Text Label 4000 8450 1    39   ~ 0
 4mm2
 Text Label 3825 8450 1    39   ~ 0
 4mm2
-Text Label 4000 7875 1    39   ~ 0
+Text Label 4175 7900 1    39   ~ 0
 4mm2
-Text Label 3825 7875 1    39   ~ 0
+Text Label 3825 7900 1    39   ~ 0
 4mm2
-$Comp
-L Device:Fuse F?
-U 1 1 62BF37F1
-P 4700 8075
-F 0 "F?" H 4760 8121 50  0001 L CNN
-F 1 "Reserve" V 4625 7925 50  0000 L CNN
-F 2 "" V 4630 8075 50  0001 C CNN
-F 3 "~" H 4700 8075 50  0001 C CNN
-	1    4700 8075
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4200 8575 4700 8575
-Wire Wire Line
-	4700 8575 4700 8225
+	3675 8575 3675 8225
 Wire Wire Line
 	4175 8550 4525 8550
 Wire Wire Line
 	4525 8550 4525 8225
-Text Label 4700 8250 3    39   ~ 0
+Text Label 3675 8275 3    39   ~ 0
 4mm2
 Wire Wire Line
+	4000 6025 4000 7925
+Wire Wire Line
+	4175 8225 4175 8550
+Wire Wire Line
 	4175 6125 4175 7925
-Text Notes 3825 7625 1    50   ~ 0
+Wire Wire Line
+	4175 6125 8350 6125
+Wire Wire Line
+	4000 6025 11400 6025
+Wire Wire Line
+	8550 6050 11425 6050
+Wire Wire Line
+	11425 6050 11425 5150
+Wire Wire Line
+	8550 6050 8550 7600
+Wire Wire Line
+	8350 6125 8350 5700
+Wire Wire Line
+	8350 5700 8550 5700
+Wire Wire Line
+	8550 5700 8550 3900
+Wire Wire Line
+	4000 8225 4000 8525
+Wire Wire Line
+	4000 8525 4150 8525
+Wire Wire Line
+	4150 8525 4175 8550
+Wire Wire Line
+	4150 8575 3675 8575
+Text Notes 3825 7675 1    50   ~ 0
 Ladewandler
-Text Notes 4000 7625 1    50   ~ 0
+Text Notes 4175 7675 1    50   ~ 0
 Solarladeregler
-Text Notes 4175 7625 1    50   ~ 0
+Text Notes 4000 7675 1    50   ~ 0
 12V Verteiler
+$Comp
+L Device:Fuse F?
+U 1 1 62BF37F1
+P 3675 8075
+F 0 "F?" H 3735 8121 50  0001 L CNN
+F 1 "Reserve Maxi" V 3600 7875 50  0000 L CNN
+F 2 "" V 3605 8075 50  0001 C CNN
+F 3 "~" H 3675 8075 50  0001 C CNN
+	1    3675 8075
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
