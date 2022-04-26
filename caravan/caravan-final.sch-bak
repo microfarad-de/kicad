@@ -238,11 +238,11 @@ Wire Wire Line
 Wire Wire Line
 	9800 3075 9800 4000
 Wire Wire Line
-	8875 4000 8875 3900
+	8825 4000 8825 3900
 Wire Wire Line
 	9850 3075 9850 4050
 Wire Wire Line
-	8725 4050 8725 3900
+	8675 4050 8675 3900
 Text Label 9800 3850 1    50   ~ 0
 2x4mm2
 $Comp
@@ -445,12 +445,7 @@ F 3 "~" H 4000 8075 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8525 7575 8550 7600
-Connection ~ 8550 7600
-Wire Wire Line
-	8575 7575 8550 7600
-Wire Wire Line
-	8275 7450 8300 7600
+	8275 7450 8375 7600
 Wire Wire Line
 	8550 9250 8550 9175
 Text Label 12525 5125 0    50   ~ 0
@@ -486,10 +481,8 @@ Text Label 4175 8475 1    39   ~ 0
 2.5mm2
 Text Label 4000 7900 1    39   ~ 0
 6mm2
-Text Label 8525 7050 3    50   ~ 0
-Wago221-615
-Text Label 8275 7050 3    50   ~ 0
-Wago221-615
+Text Label 8375 6925 3    50   ~ 0
+Wago-Klemme
 Text Label 4425 9350 0    50   ~ 0
 M5
 Text Label 3975 8650 0    50   ~ 0
@@ -529,11 +522,9 @@ Wire Wire Line
 Text Label 13750 8500 0    50   ~ 0
 2x2.5mm2
 Wire Wire Line
-	8550 3900 8425 3900
+	9800 4000 8825 4000
 Wire Wire Line
-	9800 4000 8875 4000
-Wire Wire Line
-	9850 4050 8725 4050
+	9850 4050 8675 4050
 Wire Wire Line
 	4200 8525 4175 8550
 Text Label 4350 8250 3    39   ~ 0
@@ -626,14 +617,14 @@ F 3 "" H 13675 7300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8300 6450 8300 7600
-Connection ~ 8300 7600
+	8375 6450 8375 7600
+Connection ~ 8375 7600
 Text Label 6450 9200 0    39   ~ 0
 Busbar
 Text Label 7125 9200 0    39   ~ 0
 Busbar
 Wire Wire Line
-	8550 8175 8300 8175
+	8550 8175 8375 8175
 Text Label 4350 7675 3    39   ~ 0
 2.5mm2
 Wire Wire Line
@@ -656,9 +647,7 @@ Text Label 4800 9250 0    50   ~ 0
 16mm2
 Text Label 8175 9250 0    50   ~ 0
 16mm2
-Text Label 8300 8050 1    50   ~ 0
-6mm2
-Text Label 8550 8050 1    50   ~ 0
+Text Label 8375 8025 1    50   ~ 0
 6mm2
 Text Label 4775 9350 0    50   ~ 0
 M5
@@ -741,7 +730,7 @@ L microfarad-de:Victron_SmartShunt U?
 U 1 1 60BA05A0
 P 8650 8675
 F 0 "U?" H 8650 8675 50  0001 C CNN
-F 1 "Victron SmartShunt 500A" H 8450 8700 50  0000 R CNN
+F 1 "Victron SmartShunt 500A" V 8425 9150 50  0000 R CNN
 F 2 "" H 9200 9075 50  0001 C CNN
 F 3 "" H 9200 9075 50  0001 C CNN
 	1    8650 8675
@@ -752,7 +741,7 @@ Text Label 7925 7725 0    50   ~ 0
 Wire Wire Line
 	4350 7600 4375 7600
 Wire Wire Line
-	8300 7600 8250 7475
+	8375 7600 8250 7475
 Text Notes 7000 6925 0    50   ~ 0
 Abwassertank-Heizung
 $Comp
@@ -831,12 +820,12 @@ $EndComp
 $Comp
 L microfarad-de:Victron_Solar_Charger U?
 U 1 1 60FBDCCA
-P 8825 3450
-F 0 "U?" H 8825 3750 50  0001 C CNN
-F 1 "Victron SmartSolar 75/15" H 8300 3700 50  0000 L CNN
-F 2 "" H 9375 3875 50  0001 C CNN
-F 3 "" H 9375 3875 50  0001 C CNN
-	1    8825 3450
+P 8775 3450
+F 0 "U?" H 8775 3750 50  0001 C CNN
+F 1 "Victron SmartSolar 75/15" H 8250 3700 50  0000 L CNN
+F 2 "" H 9325 3875 50  0001 C CNN
+F 3 "" H 9325 3875 50  0001 C CNN
+	1    8775 3450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -846,7 +835,7 @@ Wire Wire Line
 Wire Wire Line
 	3300 3300 3300 3450
 Wire Wire Line
-	8275 7725 8300 7600
+	8275 7725 8375 7600
 $Comp
 L Device:Thermistor TH?
 U 1 1 612334ED
@@ -885,13 +874,11 @@ Wire Wire Line
 	8150 7975 8150 8625
 Wire Wire Line
 	8125 8000 8125 8725
-Wire Wire Line
-	8550 7600 8550 8175
 Connection ~ 8550 8175
 Wire Wire Line
 	8150 8725 8125 8725
 Wire Wire Line
-	8300 8175 8300 7600
+	8375 8175 8375 7600
 Text Label 9775 6025 0    50   ~ 0
 2x6mm2
 $Comp
@@ -1286,7 +1273,7 @@ Wire Wire Line
 Wire Wire Line
 	4700 3900 4825 3900
 Wire Wire Line
-	6675 6450 8300 6450
+	6675 6450 8375 6450
 Wire Wire Line
 	7925 7725 7925 7775
 $Comp
@@ -1306,8 +1293,6 @@ Wire Wire Line
 	14625 4300 14625 5150
 Wire Wire Line
 	12525 7000 12525 7250
-Wire Wire Line
-	8575 3900 8575 7575
 Wire Wire Line
 	6650 3900 6650 6450
 Wire Wire Line
@@ -1442,8 +1427,6 @@ Wire Wire Line
 Connection ~ 2625 5200
 Wire Wire Line
 	2625 5200 2625 5100
-Text Label 8550 4900 1    50   ~ 0
-2x4mm2
 Wire Wire Line
 	2625 5250 4425 5250
 Wire Wire Line
@@ -1565,7 +1548,7 @@ Wire Notes Line
 Text Notes 4950 4750 0    39   ~ 0
 Transistor
 Text Notes 3050 2700 0    50   ~ 0
-Notizen zum Votronic Lade-Wandler:\nDas Relais unterbindet den Rückladezweig und verhindert damit das\nEinschalten vom ATC ohne Zugfahrzeug.\nDer Transistor aktiviert den Ladevorgang nur wenn ATC-Schaltplus UND \nZugfahrzeug-D+ beide aktiv sind. Damit wird der Ladevorgang unterbrochen,\nwenn der Motor aus oder die ATC-Bremse aktiv ist. \nDie Ideale Diode ermöglicht das gleichzeitige Nutzen der Shaltplus- und \nDauerplus-Leitungen zum Laden der Batterie. Dies ermöglicht die\noptimale Nutzung des Leitungsquerschnitts.\nDer Ladewandler kann mittels eines Schalters deaktiviert werden.
+Notizen zum Votronic Ladewandler:\nDas Relais unterbindet den Rückladezweig und verhindert damit das\nEinschalten vom ATC ohne Zugfahrzeug.\nDer Transistor aktiviert den Ladevorgang nur wenn ATC-Schaltplus UND \nZugfahrzeug-D+ beide aktiv sind. Damit wird der Ladevorgang unterbrochen,\nwenn der Motor aus oder die ATC-Bremse aktiv ist. \nDie Ideale Diode ermöglicht das gleichzeitige Nutzen der Shaltplus- und \nDauerplus-Leitungen zum Laden der Batterie. Dies ermöglicht die\noptimale Nutzung des Leitungsquerschnitts.\nDer Ladewandler kann mittels eines Schalters deaktiviert werden.
 Wire Wire Line
 	4950 5075 4975 5075
 Connection ~ 4950 5075
@@ -1590,8 +1573,6 @@ Wire Wire Line
 	4000 3250 4150 3250
 Text Notes 12400 4200 0    50   ~ 0
 20A Ladegerät
-Text Notes 8400 3350 0    50   ~ 0
-MPPT Solarladeregler
 $Comp
 L microfarad-de:Votronic_Charging_Converter U?
 U 1 1 60FBF50B
@@ -1604,7 +1585,7 @@ F 3 "" H 5450 3875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 4425 3350 0    50   ~ 0
-Lade-Wandler (Nr. 3321)
+Ladewandler (Nr. 3321)
 Text Notes 3650 3900 0    50   ~ 0
 Relais
 Text Label 3000 5075 0    50   ~ 0
@@ -1671,9 +1652,7 @@ Wire Wire Line
 Wire Wire Line
 	4875 5900 4875 5925
 Wire Wire Line
-	4875 5925 8525 5925
-Wire Wire Line
-	8525 5925 8525 7575
+	4875 5925 8550 5925
 Text Label 4000 8450 1    39   ~ 0
 4mm2
 Text Label 3825 8450 1    39   ~ 0
@@ -1697,21 +1676,11 @@ Wire Wire Line
 Wire Wire Line
 	4175 6125 4175 7925
 Wire Wire Line
-	4175 6125 8350 6125
+	4175 6125 8375 6125
 Wire Wire Line
 	4000 6025 11400 6025
 Wire Wire Line
-	8550 6050 11425 6050
-Wire Wire Line
 	11425 6050 11425 5150
-Wire Wire Line
-	8550 6050 8550 7600
-Wire Wire Line
-	8350 6125 8350 5700
-Wire Wire Line
-	8350 5700 8550 5700
-Wire Wire Line
-	8550 5700 8550 3900
 Wire Wire Line
 	4000 8225 4000 8525
 Wire Wire Line
@@ -1721,7 +1690,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 8575 3675 8575
 Text Notes 3825 7675 1    50   ~ 0
-Lade-Wandler
+Ladewandler
 Text Notes 4175 7675 1    50   ~ 0
 Solarladeregler
 Text Notes 4000 7675 1    50   ~ 0
@@ -1737,4 +1706,50 @@ F 3 "~" H 3675 8075 50  0001 C CNN
 	1    3675 8075
 	1    0    0    -1  
 $EndComp
+Text Label 8375 4900 1    50   ~ 0
+2x4mm2
+Wire Wire Line
+	8400 3900 8400 7550
+Wire Wire Line
+	8400 7550 8375 7600
+Wire Wire Line
+	8375 3900 8375 6125
+Wire Wire Line
+	8400 3900 8525 3900
+Wire Wire Line
+	8550 8175 8550 7600
+Wire Wire Line
+	8550 8175 8700 8175
+Wire Wire Line
+	8700 8175 8700 7600
+Wire Wire Line
+	8700 7600 8725 7600
+Wire Wire Line
+	8550 5925 8550 7600
+Connection ~ 8550 7600
+Text Label 8550 7000 3    50   ~ 0
+Wago-Klemme
+Text Label 8700 7000 3    50   ~ 0
+Wago-Klemme
+Wire Wire Line
+	8550 7600 8575 7650
+Wire Wire Line
+	8550 8175 8575 8125
+Wire Wire Line
+	8575 7650 8575 8125
+Text Label 8550 8100 1    50   ~ 0
+2x4mm2
+Text Notes 8400 3350 0    50   ~ 0
+MPPT Solarladeregler
+Text Label 8700 8025 1    50   ~ 0
+6mm2
+Wire Wire Line
+	8575 6050 11425 6050
+Wire Wire Line
+	8550 7600 8575 7550
+Wire Wire Line
+	8575 6050 8575 7550
+Wire Wire Line
+	8700 7600 8700 7575
+Connection ~ 8700 7600
 $EndSCHEMATC
