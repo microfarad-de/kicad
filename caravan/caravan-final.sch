@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "Autark-Schaltplan"
-Date "2022-04-17"
+Date "2022-04-26"
 Rev ""
 Comp ""
 Comment1 "Fendt Bianco Activ 390 FHS Autark-Schaltplan"
@@ -159,8 +159,6 @@ Wire Wire Line
 	12525 6700 12525 6625
 Wire Wire Line
 	12475 4850 12475 4900
-Wire Wire Line
-	4175 7925 4175 7600
 Text Label 13050 3300 0    50   ~ 0
 PE
 Wire Wire Line
@@ -204,11 +202,7 @@ Wire Wire Line
 Wire Wire Line
 	11200 6575 12525 6575
 Wire Wire Line
-	8550 6150 11425 6150
-Wire Wire Line
-	11425 6150 11425 5150
-Wire Wire Line
-	11400 6125 11400 5125
+	11400 6025 11400 5125
 $Comp
 L power:Earth #PWR?
 U 1 1 60E33B56
@@ -241,12 +235,6 @@ Wire Wire Line
 	9850 3075 10025 3075
 Wire Wire Line
 	10025 3075 10025 2875
-Wire Wire Line
-	4875 6100 4875 6075
-Wire Wire Line
-	4875 6100 8550 6100
-Wire Wire Line
-	4150 6100 4150 7575
 Wire Wire Line
 	9800 3075 9800 4000
 Wire Wire Line
@@ -428,7 +416,7 @@ L Device:Fuse F?
 U 1 1 608275F6
 P 4650 9250
 F 0 "F?" H 4710 9296 50  0001 L CNN
-F 1 "50A" V 4575 9175 50  0000 L CNN
+F 1 "50A MIDI" V 4575 9075 50  0000 L CNN
 F 2 "" V 4580 9250 50  0001 C CNN
 F 3 "~" H 4650 9250 50  0001 C CNN
 	1    4650 9250
@@ -448,23 +436,14 @@ $EndComp
 $Comp
 L Device:Fuse F?
 U 1 1 6048F6FE
-P 4175 8075
-F 0 "F?" H 4235 8121 50  0001 L CNN
-F 1 "30A" V 4100 8000 50  0000 L CNN
-F 2 "" V 4105 8075 50  0001 C CNN
-F 3 "~" H 4175 8075 50  0001 C CNN
-	1    4175 8075
+P 4000 8075
+F 0 "F?" H 4060 8121 50  0001 L CNN
+F 1 "30A Maxi" V 3925 7900 50  0000 L CNN
+F 2 "" V 3930 8075 50  0001 C CNN
+F 3 "~" H 4000 8075 50  0001 C CNN
+	1    4000 8075
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4200 7575 4175 7600
-Connection ~ 4175 7600
-Wire Wire Line
-	4175 7600 4175 6125
-Wire Wire Line
-	4150 7575 4175 7600
-Wire Wire Line
-	8550 6150 8550 7600
 Wire Wire Line
 	8525 7575 8550 7600
 Connection ~ 8550 7600
@@ -472,8 +451,6 @@ Wire Wire Line
 	8575 7575 8550 7600
 Wire Wire Line
 	8275 7450 8300 7600
-Text Label 4150 7050 3    50   ~ 0
-Wago221-615
 Wire Wire Line
 	8550 9250 8550 9175
 Text Label 12525 5125 0    50   ~ 0
@@ -505,9 +482,9 @@ Wire Wire Line
 	5150 9250 5150 9225
 Text Label 5775 9200 0    39   ~ 0
 Busbar
-Text Label 4175 8450 1    39   ~ 0
-6mm2
-Text Label 4175 7875 1    39   ~ 0
+Text Label 4175 8475 1    39   ~ 0
+2.5mm2
+Text Label 4000 7900 1    39   ~ 0
 6mm2
 Text Label 8525 7050 3    50   ~ 0
 Wago221-615
@@ -515,9 +492,9 @@ Text Label 8275 7050 3    50   ~ 0
 Wago221-615
 Text Label 4425 9350 0    50   ~ 0
 M5
-Text Label 3975 8600 0    50   ~ 0
+Text Label 3975 8650 0    50   ~ 0
 M10
-Text Label 3975 8950 0    50   ~ 0
+Text Label 3975 8900 0    50   ~ 0
 M10
 Text Label 8575 9175 0    50   ~ 0
 M10
@@ -557,14 +534,6 @@ Wire Wire Line
 	9800 4000 8875 4000
 Wire Wire Line
 	9850 4050 8725 4050
-Wire Wire Line
-	4175 8225 4175 8550
-Text Label 4025 7975 0    50   ~ 0
-M5
-Text Label 4025 8250 0    50   ~ 0
-M5
-Wire Wire Line
-	4525 8225 4525 8550
 Wire Wire Line
 	4200 8525 4175 8550
 Text Label 4350 8250 3    39   ~ 0
@@ -701,7 +670,7 @@ Text Label 4200 9250 0    50   ~ 0
 16mm2
 Connection ~ 4175 8550
 Wire Wire Line
-	4175 8550 4525 8550
+	4175 8550 4150 8575
 Wire Wire Line
 	4200 8525 4350 8525
 Wire Wire Line
@@ -923,7 +892,7 @@ Wire Wire Line
 	8150 8725 8125 8725
 Wire Wire Line
 	8300 8175 8300 7600
-Text Label 9775 6125 0    50   ~ 0
+Text Label 9775 6025 0    50   ~ 0
 2x6mm2
 $Comp
 L microfarad-de:ALKO_ATC U?
@@ -958,26 +927,6 @@ Wire Wire Line
 	3200 3950 3575 3950
 Wire Wire Line
 	2150 4600 2150 5075
-Wire Wire Line
-	4800 6125 4800 6150
-Wire Wire Line
-	4800 6150 4200 6150
-Wire Wire Line
-	4200 6150 4200 7575
-Wire Wire Line
-	4850 6100 4775 6100
-Wire Wire Line
-	4775 6100 4775 6125
-Wire Wire Line
-	4775 6125 4175 6125
-Wire Wire Line
-	4875 6075 4750 6075
-Wire Wire Line
-	4750 6075 4750 6100
-Wire Wire Line
-	4750 6100 4150 6100
-Wire Wire Line
-	8525 6150 8525 7575
 Wire Wire Line
 	2175 5050 2150 5075
 Wire Wire Line
@@ -1335,8 +1284,6 @@ Connection ~ 14625 5150
 Wire Wire Line
 	14625 5150 14650 5150
 Wire Wire Line
-	8525 6150 4825 6150
-Wire Wire Line
 	4700 3900 4825 3900
 Wire Wire Line
 	6675 6450 8300 6450
@@ -1362,15 +1309,11 @@ Wire Wire Line
 Wire Wire Line
 	8575 3900 8575 7575
 Wire Wire Line
-	4800 6125 11400 6125
-Wire Wire Line
-	8550 3900 8550 6100
-Wire Wire Line
 	6650 3900 6650 6450
 Wire Wire Line
 	6675 3900 6675 6450
 Wire Wire Line
-	4825 3900 4825 6150
+	4825 3900 4825 5900
 Wire Wire Line
 	4575 5800 4575 5500
 Connection ~ 4575 5500
@@ -1444,7 +1387,7 @@ L Device:Fuse F?
 U 1 1 61A89EA6
 P 2375 5200
 F 0 "F?" H 2435 5246 50  0001 L CNN
-F 1 "25A" V 2300 5125 50  0000 L CNN
+F 1 "25A Maxi" V 2300 5025 50  0000 L CNN
 F 2 "" V 2305 5200 50  0001 C CNN
 F 3 "~" H 2375 5200 50  0001 C CNN
 	1    2375 5200
@@ -1460,7 +1403,7 @@ L Device:Fuse F?
 U 1 1 617FCC38
 P 1975 6125
 F 0 "F?" H 2035 6171 50  0001 L CNN
-F 1 "25A" V 1900 6050 50  0000 L CNN
+F 1 "25A Maxi" V 1900 5950 50  0000 L CNN
 F 2 "" V 1905 6125 50  0001 C CNN
 F 3 "~" H 1975 6125 50  0001 C CNN
 	1    1975 6125
@@ -1500,7 +1443,7 @@ Connection ~ 2625 5200
 Wire Wire Line
 	2625 5200 2625 5100
 Text Label 8550 4900 1    50   ~ 0
-2x6mm2
+2x4mm2
 Wire Wire Line
 	2625 5250 4425 5250
 Wire Wire Line
@@ -1622,7 +1565,7 @@ Wire Notes Line
 Text Notes 4950 4750 0    39   ~ 0
 Transistor
 Text Notes 3050 2700 0    50   ~ 0
-Notizen zum Votronic Ladewandler:\nDas Relais unterbindet den Rückladezweig und verhindert damit das\nEinschalten vom ATC ohne Zugfahrzeug.\nDer Transistor aktiviert den Ladevorgang nur wenn ATC-Schaltplus UND \nZugfahrzeug-D+ beide aktiv sind. Damit wird der Ladevorgang unterbrochen,\nwenn der Motor aus oder die ATC-Bremse aktiv ist. \nDie Ideale Diode ermöglicht das gleichzeitige Nutzen der Shaltplus- und \nDauerplus-Leitungen zum Laden der Batterie. Dies ermöglicht die\noptimale Nutzung des Leitungsquerschnitts.\nDer Ladewandler kann mittels eines Schalters deaktiviert werden.
+Notizen zum Votronic Lade-Wandler:\nDas Relais unterbindet den Rückladezweig und verhindert damit das\nEinschalten vom ATC ohne Zugfahrzeug.\nDer Transistor aktiviert den Ladevorgang nur wenn ATC-Schaltplus UND \nZugfahrzeug-D+ beide aktiv sind. Damit wird der Ladevorgang unterbrochen,\nwenn der Motor aus oder die ATC-Bremse aktiv ist. \nDie Ideale Diode ermöglicht das gleichzeitige Nutzen der Shaltplus- und \nDauerplus-Leitungen zum Laden der Batterie. Dies ermöglicht die\noptimale Nutzung des Leitungsquerschnitts.\nDer Ladewandler kann mittels eines Schalters deaktiviert werden.
 Wire Wire Line
 	4950 5075 4975 5075
 Connection ~ 4950 5075
@@ -1638,7 +1581,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 4175 4850 4175
 Wire Wire Line
-	4850 4175 4850 6100
+	4850 4175 4850 5925
 Wire Wire Line
 	4150 3250 4150 4150
 Wire Wire Line
@@ -1661,13 +1604,13 @@ F 3 "" H 5450 3875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 4425 3350 0    50   ~ 0
-Ladewandler (Nr. 3321)
+Lade-Wandler (Nr. 3321)
 Text Notes 3650 3900 0    50   ~ 0
 Relais
 Text Label 3000 5075 0    50   ~ 0
 2x2.5mm2
 Text Label 4825 4900 1    50   ~ 0
-4mm2|6mm2
+2x4mm2
 Wire Wire Line
 	4525 7550 6425 7550
 Wire Wire Line
@@ -1693,4 +1636,105 @@ Wire Wire Line
 	4525 5550 4575 5500
 Wire Wire Line
 	4525 5550 4525 7425
+$Comp
+L Device:Fuse F?
+U 1 1 626DA299
+P 4175 8075
+F 0 "F?" H 4235 8121 50  0001 L CNN
+F 1 "20A" V 4100 8000 50  0000 L CNN
+F 2 "" V 4105 8075 50  0001 C CNN
+F 3 "~" H 4175 8075 50  0001 C CNN
+	1    4175 8075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F?
+U 1 1 626DA689
+P 3825 8075
+F 0 "F?" H 3885 8121 50  0001 L CNN
+F 1 "30A Maxi" V 3750 7900 50  0000 L CNN
+F 2 "" V 3755 8075 50  0001 C CNN
+F 3 "~" H 3825 8075 50  0001 C CNN
+	1    3825 8075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3825 8550 3825 8225
+Wire Wire Line
+	3825 8550 4175 8550
+Wire Wire Line
+	3825 7925 3825 5925
+Wire Wire Line
+	3825 5925 4850 5925
+Wire Wire Line
+	4825 5900 4875 5900
+Wire Wire Line
+	4875 5900 4875 5925
+Wire Wire Line
+	4875 5925 8525 5925
+Wire Wire Line
+	8525 5925 8525 7575
+Text Label 4000 8450 1    39   ~ 0
+4mm2
+Text Label 3825 8450 1    39   ~ 0
+4mm2
+Text Label 4175 7900 1    39   ~ 0
+4mm2
+Text Label 3825 7900 1    39   ~ 0
+4mm2
+Wire Wire Line
+	3675 8575 3675 8225
+Wire Wire Line
+	4175 8550 4525 8550
+Wire Wire Line
+	4525 8550 4525 8225
+Text Label 3675 8275 3    39   ~ 0
+4mm2
+Wire Wire Line
+	4000 6025 4000 7925
+Wire Wire Line
+	4175 8225 4175 8550
+Wire Wire Line
+	4175 6125 4175 7925
+Wire Wire Line
+	4175 6125 8350 6125
+Wire Wire Line
+	4000 6025 11400 6025
+Wire Wire Line
+	8550 6050 11425 6050
+Wire Wire Line
+	11425 6050 11425 5150
+Wire Wire Line
+	8550 6050 8550 7600
+Wire Wire Line
+	8350 6125 8350 5700
+Wire Wire Line
+	8350 5700 8550 5700
+Wire Wire Line
+	8550 5700 8550 3900
+Wire Wire Line
+	4000 8225 4000 8525
+Wire Wire Line
+	4000 8525 4150 8525
+Wire Wire Line
+	4150 8525 4175 8550
+Wire Wire Line
+	4150 8575 3675 8575
+Text Notes 3825 7675 1    50   ~ 0
+Lade-Wandler
+Text Notes 4175 7675 1    50   ~ 0
+Solarladeregler
+Text Notes 4000 7675 1    50   ~ 0
+12V Verteiler
+$Comp
+L Device:Fuse F?
+U 1 1 62BF37F1
+P 3675 8075
+F 0 "F?" H 3735 8121 50  0001 L CNN
+F 1 "Reserve Maxi" V 3600 7875 50  0000 L CNN
+F 2 "" V 3605 8075 50  0001 C CNN
+F 3 "~" H 3675 8075 50  0001 C CNN
+	1    3675 8075
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
