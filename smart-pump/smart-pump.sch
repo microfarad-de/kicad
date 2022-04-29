@@ -5,7 +5,7 @@ $Descr User 8268 5827
 encoding utf-8
 Sheet 1 1
 Title "Smart Water Pump"
-Date "2022-04-25"
+Date "2022-04-29"
 Rev ""
 Comp "µF"
 Comment1 "www.github.com/microfarad-de/smart-pump"
@@ -125,21 +125,6 @@ Wire Wire Line
 Wire Wire Line
 	1500 1500 2075 1500
 $Comp
-L power:+12V #PWR02
-U 1 1 624B860C
-P 1800 2200
-F 0 "#PWR02" H 1800 2050 50  0001 C CNN
-F 1 "+12V" H 1815 2373 50  0000 C CNN
-F 2 "" H 1800 2200 50  0001 C CNN
-F 3 "" H 1800 2200 50  0001 C CNN
-	1    1800 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1700 2225 1800 2225
-Wire Wire Line
-	1800 2225 1800 2200
-$Comp
 L Device:R R6
 U 1 1 624BB180
 P 6025 3200
@@ -158,10 +143,6 @@ Wire Wire Line
 	1700 3050 1900 3050
 Wire Wire Line
 	1700 2950 1900 2950
-Wire Wire Line
-	1700 2425 1800 2425
-Wire Wire Line
-	1800 2425 1800 2450
 $Comp
 L Device:R R7
 U 1 1 624C399C
@@ -482,19 +463,17 @@ F 3 "~" H 1500 3050 50  0001 C CNN
 	1    1500 3050
 	-1   0    0    1   
 $EndComp
-Text GLabel 1900 2325 2    50   Output ~ 0
+Text GLabel 1900 2225 2    50   Output ~ 0
 LEVEL
-Wire Wire Line
-	1700 2325 1900 2325
 $Comp
 L power:GND #PWR03
 U 1 1 62675ECE
-P 1800 2450
-F 0 "#PWR03" H 1800 2200 50  0001 C CNN
-F 1 "GND" H 1805 2277 50  0000 C CNN
-F 2 "" H 1800 2450 50  0001 C CNN
-F 3 "" H 1800 2450 50  0001 C CNN
-	1    1800 2450
+P 2075 2475
+F 0 "#PWR03" H 2075 2225 50  0001 C CNN
+F 1 "GND" H 2080 2302 50  0000 C CNN
+F 2 "" H 2075 2475 50  0001 C CNN
+F 3 "" H 2075 2475 50  0001 C CNN
+	1    2075 2475
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -541,4 +520,29 @@ Wire Wire Line
 	5550 2150 5650 2150
 Wire Wire Line
 	5950 2150 6025 2150
+Wire Wire Line
+	1700 2225 1900 2225
+Wire Wire Line
+	1700 2425 1725 2425
+Wire Wire Line
+	1725 2425 1725 2650
+Wire Wire Line
+	1725 2650 1850 2650
+Wire Wire Line
+	1850 2650 1850 2625
+Wire Wire Line
+	1700 2325 2075 2325
+Wire Wire Line
+	2075 2325 2075 2475
+$Comp
+L power:+12V #PWR02
+U 1 1 624B860C
+P 1850 2625
+F 0 "#PWR02" H 1850 2475 50  0001 C CNN
+F 1 "+12V" H 1865 2798 50  0000 C CNN
+F 2 "" H 1850 2625 50  0001 C CNN
+F 3 "" H 1850 2625 50  0001 C CNN
+	1    1850 2625
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
