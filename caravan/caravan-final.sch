@@ -611,7 +611,7 @@ F 3 "~" H 4275 8225 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 8600 9400 1    39   ~ 0
-16mm2
+25mm2
 Text Label 8400 8025 1    50   ~ 0
 6mm2
 Text Label 4500 9250 0    50   ~ 0
@@ -1622,7 +1622,7 @@ Connection ~ 8050 9250
 Wire Wire Line
 	8600 9175 8600 9475
 Text Label 8275 9225 3    39   ~ 0
-16mm2
+25mm2
 $Comp
 L Device:Fuse F?
 U 1 1 627B688D
@@ -1685,7 +1685,7 @@ Wire Wire Line
 	4500 9250 5150 9250
 Connection ~ 5150 9250
 Text Label 4725 9250 0    39   ~ 0
-16mm2
+25mm2
 Wire Wire Line
 	4275 8375 4275 8700
 Wire Wire Line

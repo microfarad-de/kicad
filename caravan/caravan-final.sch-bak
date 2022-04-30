@@ -148,7 +148,7 @@ Wire Notes Line
 Wire Notes Line
 	12125 3375 12125 2300
 Text Notes 12150 2425 0    50   ~ 0
-230V Verteiler
+230V-Verteiler
 Text Label 12900 3150 0    50   ~ 0
 L
 Text Label 12975 3225 0    50   ~ 0
@@ -170,7 +170,7 @@ Wire Wire Line
 Wire Wire Line
 	13950 2475 13925 2475
 Text Notes 14750 1600 0    50   ~ 0
-230V Steckdosen
+230V-Steckdosen
 Wire Notes Line
 	14400 2300 14400 3375
 Wire Notes Line
@@ -1048,9 +1048,9 @@ Wire Wire Line
 Text Label 13700 4875 2    50   ~ 0
 2x4mm2
 Text Notes 14750 3875 0    50   ~ 0
-12V Steckdosen Kreis 1
+12V-Steckdosen Kreis 1
 Text Notes 14750 4025 0    50   ~ 0
-12V Steckdosen Kreis 2
+12V-Steckdosen Kreis 2
 Wire Wire Line
 	14725 4175 14600 4175
 Text Notes 14750 4175 0    50   ~ 0
@@ -1127,7 +1127,7 @@ Connection ~ 11475 3200
 Wire Wire Line
 	11475 3200 11475 3275
 Text Notes 11525 3275 0    50   ~ 0
-230V\nSteckdose
+230V-\nSteckdose
 Wire Notes Line
 	2875 1425 2875 10375
 Text Notes 2075 1550 0    79   ~ 0
@@ -1759,4 +1759,30 @@ Text Notes 8800 7725 1    50   ~ 0
 Reserve
 Text Label 4275 8675 1    50   ~ 0
 4mm2
+$Comp
+L Device:Fuse F?
+U 1 1 640CAE85
+P 4675 8225
+F 0 "F?" H 4735 8271 50  0001 L CNN
+F 1 "10A" V 4600 8150 50  0000 L CNN
+F 2 "" V 4605 8225 50  0001 C CNN
+F 3 "~" H 4675 8225 50  0001 C CNN
+	1    4675 8225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4675 8375 4675 8700
+Wire Wire Line
+	4675 8700 4050 8925
+Text Label 4675 8675 1    50   ~ 0
+4mm2
+Wire Wire Line
+	4675 8075 4675 7650
+Wire Wire Line
+	4675 7650 4700 7650
+Connection ~ 4675 7650
+Wire Wire Line
+	4675 7650 4675 7625
+Text Notes 4675 8025 1    50   ~ 0
+Reserve
 $EndSCHEMATC
