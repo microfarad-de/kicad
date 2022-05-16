@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "Autark-Schaltplan"
-Date "2022-04-28"
+Date "2022-05-16"
 Rev ""
 Comp ""
 Comment1 "Fendt Bianco Activ 390 FHS Autark-Schaltplan"
@@ -33,7 +33,7 @@ Wire Wire Line
 	7375 9200 7375 9325
 Wire Wire Line
 	7775 8825 7775 9325
-Text Label 7775 9275 1    39   ~ 0
+Text Label 7775 9300 1    39   ~ 0
 2x6mm2(200'C)
 Wire Wire Line
 	7225 8825 5550 8825
@@ -65,15 +65,13 @@ Connection ~ 7775 9325
 Wire Notes Line
 	5150 8100 8050 8100
 Wire Notes Line
-	8050 8100 8050 10150
-Wire Notes Line
 	8050 10150 5150 10150
 Wire Notes Line
 	5150 10150 5150 8100
 Text Notes 6450 8200 0    50   ~ 0
 Batterie
 Wire Wire Line
-	7925 9250 7925 8825
+	7925 9325 7925 8825
 $Comp
 L Device:Fuse F?
 U 1 1 60491591
@@ -201,8 +199,6 @@ Wire Wire Line
 	11175 6600 12525 6600
 Wire Wire Line
 	11200 6575 12525 6575
-Wire Wire Line
-	11400 6125 11400 5125
 $Comp
 L power:Earth #PWR?
 U 1 1 60E33B56
@@ -238,11 +234,11 @@ Wire Wire Line
 Wire Wire Line
 	9800 3075 9800 4000
 Wire Wire Line
-	8900 4000 8900 3900
+	9000 4000 9000 3900
 Wire Wire Line
 	9850 3075 9850 4050
 Wire Wire Line
-	8750 4050 8750 3900
+	8850 4050 8850 3900
 Text Label 9800 3850 1    50   ~ 0
 2x4mm2
 $Comp
@@ -393,7 +389,7 @@ Wire Wire Line
 	12725 2475 12625 2475
 Text Label 5250 9400 0    39   ~ 0
 M6
-Text Label 8050 9250 0    50   ~ 0
+Text Label 8050 9325 0    50   ~ 0
 M8
 Text Label 5025 9250 0    50   ~ 0
 M8
@@ -425,20 +421,18 @@ $EndComp
 $Comp
 L Switch:SW_SPST SW?
 U 1 1 60494421
-P 8400 9475
-F 0 "SW?" V 8354 9573 50  0001 L CNN
-F 1 "Hauptschalter" H 8150 9375 50  0000 L CNN
-F 2 "" H 8400 9475 50  0001 C CNN
-F 3 "~" H 8400 9475 50  0001 C CNN
-	1    8400 9475
-	1    0    0    -1  
+P 8600 8075
+F 0 "SW?" V 8554 8173 50  0001 L CNN
+F 1 "Hauptschalter" V 8600 7500 50  0000 L CNN
+F 2 "" H 8600 8075 50  0001 C CNN
+F 3 "~" H 8600 8075 50  0001 C CNN
+	1    8600 8075
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	8275 7450 8400 7600
 Text Label 12525 5125 0    50   ~ 0
 2x6mm2
 Wire Wire Line
-	7925 9250 8050 9250
+	7925 9325 8050 9325
 Wire Wire Line
 	7800 9300 7775 9325
 Wire Wire Line
@@ -448,12 +442,12 @@ Wire Wire Line
 Wire Wire Line
 	7925 8825 7950 8850
 Wire Wire Line
-	7950 8850 7950 9225
+	7950 8850 7950 9300
 Wire Wire Line
-	7950 9225 8025 9225
+	7950 9300 8025 9300
 Wire Wire Line
-	8025 9225 8050 9250
-Text Label 7925 9275 1    39   ~ 0
+	8025 9300 8050 9325
+Text Label 7925 9300 1    39   ~ 0
 2x6mm2(200'C)
 Wire Wire Line
 	5150 9250 5350 9250
@@ -461,15 +455,15 @@ Wire Wire Line
 	5150 9250 5150 9225
 Text Label 5775 9200 0    39   ~ 0
 Busbar
-Text Label 4050 8675 1    50   ~ 0
+Text Label 3825 8675 1    50   ~ 0
 6mm2
-Text Label 8200 9475 2    50   ~ 0
+Text Label 8600 8275 2    50   ~ 0
 M10
-Text Label 8600 9475 0    50   ~ 0
+Text Label 8600 7975 2    50   ~ 0
 M10
-Text Label 8600 9175 0    50   ~ 0
+Text Label 8600 9300 0    50   ~ 0
 M10
-Text Label 8600 8250 0    50   ~ 0
+Text Label 8600 8375 0    50   ~ 0
 M10
 Wire Wire Line
 	14725 1550 13425 1550
@@ -500,9 +494,9 @@ Wire Wire Line
 Text Label 13750 8500 0    50   ~ 0
 2x2.5mm2
 Wire Wire Line
-	9800 4000 8900 4000
+	9800 4000 9000 4000
 Wire Wire Line
-	9850 4050 8750 4050
+	9850 4050 8850 4050
 $Comp
 L microfarad-de:Caravan_13_Pin_Plug U?
 U 1 1 60FB6D53
@@ -586,15 +580,11 @@ F 3 "" H 13675 7300 50  0001 C CNN
 	1    13125 6950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8400 6450 8400 7600
-Connection ~ 8400 7600
+Connection ~ 8450 7300
 Text Label 6450 9200 0    39   ~ 0
 Busbar
 Text Label 7125 9200 0    39   ~ 0
 Busbar
-Wire Wire Line
-	8600 8175 8400 8175
 Text Label 4275 7725 3    50   ~ 0
 2.5mm2
 Wire Wire Line
@@ -610,9 +600,7 @@ F 3 "~" H 4275 8225 50  0001 C CNN
 	1    4275 8225
 	1    0    0    -1  
 $EndComp
-Text Label 8600 9400 1    39   ~ 0
-16mm2
-Text Label 8400 8025 1    50   ~ 0
+Text Label 8450 7725 1    50   ~ 0
 6mm2
 Text Label 4500 9250 0    50   ~ 0
 M8
@@ -623,7 +611,7 @@ L microfarad-de:12V-24V_Converter U?
 U 1 1 60B846D3
 P 6875 3500
 F 0 "U?" H 6875 3500 50  0001 C CNN
-F 1 "12V-24V Wandler" H 6525 3675 50  0000 L CNN
+F 1 "12V-24V-Wandler" H 6525 3675 50  0000 L CNN
 F 2 "" H 7425 3900 50  0001 C CNN
 F 3 "" H 7425 3900 50  0001 C CNN
 	1    6875 3500
@@ -643,7 +631,7 @@ Wire Wire Line
 	6675 3900 6775 3900
 Wire Wire Line
 	6650 3900 6575 3900
-Text Notes 7000 7350 0    50   ~ 0
+Text Notes 7075 7000 0    50   ~ 0
 Wasserpumpe/Toilette/Herd
 $Comp
 L Device:Fuse F?
@@ -680,21 +668,21 @@ $EndComp
 $Comp
 L microfarad-de:Victron_SmartShunt U?
 U 1 1 60BA05A0
-P 8700 8675
-F 0 "U?" H 8700 8675 50  0001 C CNN
-F 1 "Victron SmartShunt 500A" V 8475 9150 50  0000 R CNN
-F 2 "" H 9250 9075 50  0001 C CNN
-F 3 "" H 9250 9075 50  0001 C CNN
-	1    8700 8675
+P 8700 8800
+F 0 "U?" H 8700 8800 50  0001 C CNN
+F 1 "Victron SmartShunt 500A" V 8475 9275 50  0000 R CNN
+F 2 "" H 9250 9200 50  0001 C CNN
+F 3 "" H 9250 9200 50  0001 C CNN
+	1    8700 8800
 	-1   0    0    -1  
 $EndComp
-Text Label 7925 7725 0    50   ~ 0
+Text Label 8925 7725 1    50   ~ 0
 4mm2
 Wire Wire Line
 	4275 7600 4300 7600
 Wire Wire Line
-	8400 7600 8250 7475
-Text Notes 7000 6925 0    50   ~ 0
+	8450 7300 8350 7475
+Text Notes 7075 6725 0    50   ~ 0
 Abwassertank-Heizung
 $Comp
 L Device:Heater R?
@@ -709,7 +697,7 @@ F 3 "~" H 14200 1925 50  0001 C CNN
 $EndComp
 Text Notes 13725 1925 0    50   ~ 0
 Truma C4
-Text Notes 7600 7800 0    50   ~ 0
+Text Notes 8950 7825 0    50   ~ 0
 Chassis
 Text Notes 14850 3525 0    50   ~ 0
 Chassis
@@ -767,17 +755,17 @@ F 1 "Diode" H 3300 3725 50  0001 C CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3300 3425 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3300 3600 50  0001 C CNN
 	1    3300 3600
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L microfarad-de:Victron_Solar_Charger U?
 U 1 1 60FBDCCA
-P 8850 3450
-F 0 "U?" H 8850 3750 50  0001 C CNN
-F 1 "Victron SmartSolar 75/15" H 8325 3700 50  0000 L CNN
-F 2 "" H 9400 3875 50  0001 C CNN
-F 3 "" H 9400 3875 50  0001 C CNN
-	1    8850 3450
+P 8950 3450
+F 0 "U?" H 8950 3750 50  0001 C CNN
+F 1 "Victron SmartSolar 75/15" H 8425 3700 50  0000 L CNN
+F 2 "" H 9500 3875 50  0001 C CNN
+F 3 "" H 9500 3875 50  0001 C CNN
+	1    8950 3450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -786,8 +774,6 @@ Wire Wire Line
 	3300 3900 3300 3750
 Wire Wire Line
 	3300 3300 3300 3450
-Wire Wire Line
-	8275 7725 8400 7600
 $Comp
 L Device:Thermistor TH?
 U 1 1 612334ED
@@ -823,16 +809,11 @@ Wire Wire Line
 Wire Wire Line
 	6300 7975 8200 7975
 Wire Wire Line
-	8200 7975 8200 8625
+	8200 7975 8200 8750
 Wire Wire Line
-	8175 8000 8175 8725
-Connection ~ 8600 8175
+	8175 8000 8175 8850
 Wire Wire Line
-	8200 8725 8175 8725
-Wire Wire Line
-	8400 8175 8400 7600
-Text Label 9775 6125 0    50   ~ 0
-2x6mm2
+	8200 8850 8175 8850
 $Comp
 L microfarad-de:ALKO_ATC U?
 U 1 1 612ED3D9
@@ -868,10 +849,6 @@ Wire Wire Line
 	2150 4600 2150 5075
 Wire Wire Line
 	2175 5050 2150 5075
-Wire Wire Line
-	4475 7600 4500 7600
-Wire Wire Line
-	4475 7600 4475 8075
 $Comp
 L microfarad-de:Victron_Mains_Charger U?
 U 1 1 618612A6
@@ -1048,9 +1025,9 @@ Wire Wire Line
 Text Label 13700 4875 2    50   ~ 0
 2x4mm2
 Text Notes 14750 3875 0    50   ~ 0
-12V-Steckdosen Kreis 1
-Text Notes 14750 4025 0    50   ~ 0
 12V-Steckdosen Kreis 2
+Text Notes 7075 7275 0    50   ~ 0
+12V-Steckdosen Kreis 1
 Wire Wire Line
 	14725 4175 14600 4175
 Text Notes 14750 4175 0    50   ~ 0
@@ -1138,9 +1115,6 @@ Wire Wire Line
 	4275 7600 4275 7475
 Connection ~ 4275 7600
 Wire Wire Line
-	4475 7600 4475 7550
-Connection ~ 4475 7600
-Wire Wire Line
 	5750 6750 5725 6750
 Wire Wire Line
 	5725 6750 5725 7075
@@ -1180,42 +1154,36 @@ Wire Wire Line
 Wire Wire Line
 	6325 6450 6400 6450
 Wire Wire Line
-	5975 7475 6350 7475
+	5975 7475 6375 7475
 Wire Wire Line
-	6350 7475 6350 6875
+	6375 7475 6375 6675
 Wire Wire Line
-	6350 6875 6425 6875
+	6375 6675 6400 6675
 Wire Wire Line
-	6625 7450 6625 7325
+	6625 6975 7050 6975
 Wire Wire Line
-	6625 7325 6975 7325
+	6600 7475 8350 7475
 Wire Wire Line
-	6625 7450 8275 7450
+	6600 6700 7050 6700
 Wire Wire Line
-	6600 7475 8250 7475
+	6600 6700 6600 7475
 Wire Wire Line
-	6600 6900 6975 6900
-Wire Wire Line
-	6600 6900 6600 7475
-Wire Wire Line
-	6425 7550 6425 7300
+	6425 7550 6425 6950
 Text Label 5900 7100 3    39   ~ 0
 5x1.5mm2
-Wire Wire Line
-	8275 7725 7925 7725
 Wire Wire Line
 	6400 6450 6400 6475
 Connection ~ 6400 6450
 Wire Wire Line
 	6400 6450 6650 6450
 Wire Wire Line
-	6425 6875 6425 6900
-Connection ~ 6425 6875
+	6400 6675 6400 6700
+Connection ~ 6400 6675
 Wire Wire Line
-	6425 6875 6975 6875
-Text Label 6625 6875 0    39   ~ 0
+	6400 6675 7050 6675
+Text Label 6625 6675 0    50   ~ 0
 2x2.5mm2
-Text Label 6625 7300 0    39   ~ 0
+Text Label 6625 6950 0    50   ~ 0
 2x2.5mm2
 Wire Wire Line
 	14725 4300 14625 4300
@@ -1225,18 +1193,16 @@ Wire Wire Line
 Wire Wire Line
 	4700 3900 4825 3900
 Wire Wire Line
-	6675 6450 8400 6450
-Wire Wire Line
-	7925 7725 7925 7775
+	6675 6450 8350 6450
 $Comp
 L power:Earth #PWR?
 U 1 1 60C996AE
-P 7925 7775
-F 0 "#PWR?" H 7925 7525 50  0001 C CNN
-F 1 "Earth" H 7925 7625 50  0001 C CNN
-F 2 "" H 7925 7775 50  0001 C CNN
-F 3 "~" H 7925 7775 50  0001 C CNN
-	1    7925 7775
+P 8925 7800
+F 0 "#PWR?" H 8925 7550 50  0001 C CNN
+F 1 "Earth" H 8925 7650 50  0001 C CNN
+F 2 "" H 8925 7800 50  0001 C CNN
+F 3 "~" H 8925 7800 50  0001 C CNN
+	1    8925 7800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1514,15 +1480,13 @@ Wire Wire Line
 Wire Wire Line
 	4000 4175 4850 4175
 Wire Wire Line
-	4850 4175 4850 5925
-Wire Wire Line
 	4150 3250 4150 4150
 Wire Wire Line
 	4000 3250 4000 3300
 Wire Wire Line
 	4000 3250 4150 3250
 Text Notes 12400 4200 0    50   ~ 0
-20A Ladegerät
+20A-Ladegerät
 $Comp
 L microfarad-de:Votronic_Charging_Converter U?
 U 1 1 60FBF50B
@@ -1543,7 +1507,7 @@ Text Label 3000 5075 0    50   ~ 0
 Text Label 4825 4900 1    50   ~ 0
 2x4mm2
 Wire Wire Line
-	6425 7300 6975 7300
+	6425 6950 7050 6950
 Wire Wire Line
 	3575 3950 3575 5375
 Wire Wire Line
@@ -1567,19 +1531,11 @@ Wire Wire Line
 	4525 5550 4525 7425
 Wire Wire Line
 	4825 5900 4875 5900
-Wire Wire Line
-	4875 5900 4875 5925
-Wire Wire Line
-	4875 5925 8500 5925
 Text Label 3600 8675 1    50   ~ 0
 4mm2
-Wire Wire Line
-	11425 6150 11425 5150
-Text Notes 3600 8325 1    50   ~ 0
+Text Notes 3375 8250 1    50   ~ 0
 Ladewandler
-Text Notes 3825 8325 1    50   ~ 0
-Solarladeregler
-Text Notes 4050 8325 1    50   ~ 0
+Text Notes 3825 8250 1    50   ~ 0
 12V-Verteiler
 $Comp
 L Device:Fuse F?
@@ -1592,37 +1548,13 @@ F 3 "~" H 4050 9100 50  0001 C CNN
 	1    4050 9100
 	1    0    0    -1  
 $EndComp
-Text Label 8575 4900 1    50   ~ 0
-2x4mm2
-Wire Wire Line
-	8600 8175 8800 8175
-Wire Wire Line
-	8600 8175 8700 8100
-Text Notes 8400 3350 0    50   ~ 0
-MPPT Solarladeregler
-Text Label 8800 8025 1    50   ~ 0
+Text Notes 8625 3350 0    50   ~ 0
+Solarladeregler
+Text Label 8750 7725 1    50   ~ 0
 6mm2
-Wire Wire Line
-	8700 6150 11425 6150
-Wire Wire Line
-	8700 6150 8700 8100
-Text Label 8700 8025 1    50   ~ 0
-6mm2
-Text Label 8500 8025 1    50   ~ 0
-4mm2
-Wire Wire Line
-	8500 5925 8500 8100
-Wire Wire Line
-	8500 8100 8600 8175
-Wire Wire Line
-	8200 9475 8200 9250
-Wire Wire Line
-	8200 9250 8050 9250
-Connection ~ 8050 9250
-Wire Wire Line
-	8600 9175 8600 9475
-Text Label 8275 9225 3    39   ~ 0
-16mm2
+Text Label 8575 7775 1    50   ~ 0
+2x6mm2
+Connection ~ 8050 9325
 $Comp
 L Device:Fuse F?
 U 1 1 627B688D
@@ -1684,105 +1616,218 @@ M5
 Wire Wire Line
 	4500 9250 5150 9250
 Connection ~ 5150 9250
-Text Label 4725 9250 0    39   ~ 0
-16mm2
+Text Label 4700 9250 0    50   ~ 0
+25mm2
 Wire Wire Line
-	4275 8375 4275 8700
-Wire Wire Line
-	4475 8375 4475 8700
+	4275 8375 4275 8750
 Wire Notes Line
 	3225 8850 4675 8850
 Wire Notes Line
 	3225 9450 4675 9450
-Text Label 4475 8675 1    50   ~ 0
-4mm2
-Text Label 3825 8675 1    50   ~ 0
+Text Label 3375 8675 1    50   ~ 0
 4mm2
 Text Label 4475 7725 3    50   ~ 0
 2.5mm2
 Wire Wire Line
-	3600 5925 3600 8950
+	4050 8375 4075 8375
 Wire Wire Line
-	3600 5925 4850 5925
-Wire Wire Line
-	4050 6125 11400 6125
-Wire Wire Line
-	3375 8950 3375 7600
-Wire Wire Line
-	3375 7600 3400 7600
-Connection ~ 3375 7600
-Wire Wire Line
-	3375 7600 3375 7550
-Text Label 3375 8675 1    50   ~ 0
+	4050 8375 4050 8350
+Text Label 4050 8675 1    50   ~ 0
 6mm2
-Text Notes 3375 8325 1    50   ~ 0
+Text Notes 4075 8250 1    50   ~ 0
 Reserve
 Wire Wire Line
 	4275 7475 5900 7475
 Wire Wire Line
 	4475 7550 6425 7550
-Text Label 8600 8025 1    50   ~ 0
-4mm2
-Wire Wire Line
-	8600 3900 8600 8175
-Wire Wire Line
-	8450 3900 8575 3900
-Wire Wire Line
-	8575 3900 8575 6025
-Wire Wire Line
-	3825 6025 8575 6025
-Wire Wire Line
-	3825 8950 3825 6025
-Wire Wire Line
-	4050 6125 4050 8925
-Wire Wire Line
-	4275 8700 4050 8925
-Connection ~ 4050 8925
-Wire Wire Line
-	4050 8925 4050 8950
-Wire Wire Line
-	4475 8700 4050 8925
-Text Notes 8500 7725 1    50   ~ 0
+Text Notes 8550 7175 1    50   ~ 0
 Ladewandler
-Text Notes 8600 7725 1    50   ~ 0
+Text Notes 8650 7175 1    50   ~ 0
 Solarladeregler
-Text Notes 8700 7725 1    50   ~ 0
+Text Notes 8450 7175 1    50   ~ 0
 12V-Verteiler
-Wire Wire Line
-	8800 7225 8800 7250
-Wire Wire Line
-	8800 7250 8825 7250
-Connection ~ 8800 7250
-Wire Wire Line
-	8800 7250 8800 8175
-Text Notes 8800 7725 1    50   ~ 0
+Text Notes 8775 7175 1    50   ~ 0
 Reserve
 Text Label 4275 8675 1    50   ~ 0
-4mm2
+2.5mm2
 $Comp
 L Device:Fuse F?
 U 1 1 640CAE85
 P 4675 8225
 F 0 "F?" H 4735 8271 50  0001 L CNN
-F 1 "10A" V 4600 8150 50  0000 L CNN
+F 1 "15A" V 4600 8150 50  0000 L CNN
 F 2 "" V 4605 8225 50  0001 C CNN
 F 3 "~" H 4675 8225 50  0001 C CNN
 	1    4675 8225
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4675 8375 4675 8700
-Wire Wire Line
-	4675 8700 4050 8925
-Text Label 4675 8675 1    50   ~ 0
+Text Label 4675 7750 3    50   ~ 0
 4mm2
 Wire Wire Line
-	4675 8075 4675 7650
+	4675 7625 6475 7625
+Text Label 4475 8675 1    50   ~ 0
+2.5mm2
+Text Label 4675 8675 1    50   ~ 0
+2.5mm2
 Wire Wire Line
-	4675 7650 4700 7650
-Connection ~ 4675 7650
+	4475 7550 4475 8075
 Wire Wire Line
-	4675 7650 4675 7625
-Text Notes 4675 8025 1    50   ~ 0
+	4675 7625 4675 8075
+Text Notes 14750 4025 0    50   ~ 0
 Reserve
+Wire Wire Line
+	6475 7225 7050 7225
+Wire Wire Line
+	6475 7225 6475 7625
+Wire Wire Line
+	7050 7250 6650 7250
+Wire Wire Line
+	6650 7250 6650 7425
+Wire Wire Line
+	6650 7425 8350 7425
+Wire Wire Line
+	8350 7425 8450 7300
+Wire Wire Line
+	8350 6450 8350 7200
+Wire Wire Line
+	8350 7200 8450 7300
+Wire Wire Line
+	8600 9325 8600 9300
+Wire Wire Line
+	8050 9325 8600 9325
+Text Label 8225 9325 0    50   ~ 0
+25mm2
+Wire Wire Line
+	8600 8300 8600 8275
+Wire Wire Line
+	8550 3900 8625 3900
+Text Label 8625 4900 1    50   ~ 0
+2x4mm2
+Wire Wire Line
+	8625 3900 8625 6025
+Wire Wire Line
+	8600 7875 8625 7825
+Connection ~ 8600 7875
+Wire Wire Line
+	8600 7875 8575 7825
+Wire Wire Line
+	8575 7825 8575 7350
+Wire Wire Line
+	8575 7350 8600 7300
+Wire Wire Line
+	8625 7825 8625 7350
+Wire Wire Line
+	8625 7350 8600 7300
+Wire Wire Line
+	8550 7200 8600 7300
+Connection ~ 8600 7300
+Wire Wire Line
+	8600 7300 8650 7200
+Wire Wire Line
+	8650 7200 8650 3900
+Wire Wire Line
+	8650 3900 8700 3900
+Wire Wire Line
+	8450 7800 8600 7875
+Wire Wire Line
+	8750 7300 8750 7800
+Wire Wire Line
+	8750 7800 8600 7875
+Wire Wire Line
+	8750 7300 8775 7300
+Wire Wire Line
+	8750 7300 8750 7275
+Connection ~ 8750 7300
+Wire Wire Line
+	8600 7300 8600 7450
+Wire Wire Line
+	8600 7450 8925 7450
+Wire Wire Line
+	8925 7450 8925 7800
+Wire Wire Line
+	8450 7800 8450 7300
+Text Label 6700 7225 0    50   ~ 0
+2x4mm2
+Wire Wire Line
+	6625 7450 8350 7450
+Wire Wire Line
+	6625 6975 6625 7450
+Wire Wire Line
+	8350 7450 8450 7300
+Wire Notes Line
+	8400 7250 8800 7250
+Wire Notes Line
+	8800 7250 8800 7350
+Wire Notes Line
+	8800 7350 8400 7350
+Wire Notes Line
+	8400 7350 8400 7250
+Text Notes 8825 7350 0    50   ~ 0
+3x Wago-Klemmen
+Text Notes 3975 8475 1    50   ~ 0
+W-K
+Wire Notes Line
+	4000 8325 4100 8325
+Wire Notes Line
+	4100 8325 4100 8425
+Wire Notes Line
+	4100 8425 4000 8425
+Wire Notes Line
+	4000 8425 4000 8325
+Text Notes 8350 7175 1    50   ~ 0
+12V-24V-Wandler
+Wire Notes Line
+	8050 8100 8050 10150
+Wire Wire Line
+	4850 4175 4850 5925
+Wire Wire Line
+	8550 5925 8550 7200
+Wire Wire Line
+	4875 5900 4875 5925
+Wire Wire Line
+	4875 5925 8550 5925
+Wire Wire Line
+	11425 6150 11425 5150
+Wire Wire Line
+	8450 7300 8450 6150
+Wire Wire Line
+	8450 6150 11425 6150
+Wire Wire Line
+	11400 6125 11400 5125
+Text Label 9775 6125 0    50   ~ 0
+2x6mm2
+Wire Wire Line
+	3825 8950 3825 6125
+Wire Wire Line
+	3825 6125 11400 6125
+Text Notes 3600 8250 1    50   ~ 0
+Solarladeregler
+Connection ~ 4050 8375
+Wire Wire Line
+	3600 8925 3600 6025
+Wire Wire Line
+	3600 6025 8625 6025
+Wire Wire Line
+	3375 8950 3375 5925
+Wire Wire Line
+	3375 5925 4850 5925
+Wire Wire Line
+	4050 8375 4050 8950
+Wire Wire Line
+	4275 8750 3900 8750
+Wire Wire Line
+	3900 8750 3825 8950
+Connection ~ 3825 8950
+Wire Wire Line
+	4475 8775 3925 8775
+Wire Wire Line
+	3925 8775 3825 8950
+Wire Wire Line
+	4475 8375 4475 8775
+Wire Wire Line
+	4675 8800 3950 8800
+Wire Wire Line
+	3950 8800 3825 8950
+Wire Wire Line
+	4675 8375 4675 8800
 $EndSCHEMATC
