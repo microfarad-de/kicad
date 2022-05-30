@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name caravan-final-rescue)(type Legacy)(uri ${KIPRJMOD}/caravan-final-rescue.lib)(options "")(descr ""))
+  (lib (name "caravan-final-rescue")(type "Legacy")(uri "${KIPRJMOD}/caravan-final-rescue.lib")(options "")(descr ""))
+  (lib (name "caravan-rescue")(type "Legacy")(uri "${KIPRJMOD}/caravan-rescue.lib")(options "")(descr ""))
 )
