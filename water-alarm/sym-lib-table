@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "water-alarm-rescue")(type "Legacy")(uri "${KIPRJMOD}/water-alarm-rescue.lib")(options "")(descr ""))
+)
