@@ -6,7 +6,7 @@
 
   (title_block
     (title "555 Delay Timer")
-    (date "2024-09-29")
+    (date "2024-10-12")
     (company "Copyright (C) 2024, Karim Hraibi")
     (comment 2 "by a time duration defined by the values of R2 and C3.")
     (comment 3 "This circuit delays the power on of an automotive relay")
@@ -669,8 +669,8 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 32fa9e94-a1e0-4515-9d71-a3251eec9884)
   )
-  (text "3.4MΩ / 100µF provide \na power on delay of \napprox. 7 minutes."
-    (at 130.175 74.93 0)
+  (text "Time delay in seconds\nt = R * C * ln(3)\nThe current circuit has a \ndelay of approx. 2 minutes\nfor R2 = 1 MΩ and C3 = 100 µF "
+    (at 135.89 76.835 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 39c3bacd-e5bd-424f-a87f-b5f14ff102e7)
   )
@@ -803,7 +803,7 @@
     (property "Reference" "R2" (id 0) (at 121.793 47.4253 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "3.4MΩ" (id 1) (at 121.793 49.9622 0)
+    (property "Value" "1MΩ" (id 1) (at 121.793 49.9622 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "" (id 2) (at 118.237 48.26 90)
@@ -918,7 +918,7 @@
       (reference "R1") (unit 1) (value "100KΩ") (footprint "")
     )
     (path "/b74d8b92-e4d4-45a9-93ff-ee3d3a9df3f3"
-      (reference "R2") (unit 1) (value "3.4MΩ") (footprint "")
+      (reference "R2") (unit 1) (value "1MΩ") (footprint "")
     )
     (path "/8910fa7f-b124-484f-8582-c326523d5863"
       (reference "U1") (unit 1) (value "NE555D") (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
