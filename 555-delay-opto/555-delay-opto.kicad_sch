@@ -976,7 +976,7 @@
     (property "Reference" "R5" (id 0) (at 145.923 47.4253 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "470Ω" (id 1) (at 145.923 49.9622 0)
+    (property "Value" "1KΩ" (id 1) (at 145.923 49.9622 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "" (id 2) (at 142.367 48.26 90)
@@ -1221,7 +1221,7 @@
       (reference "R4") (unit 1) (value "1KΩ") (footprint "")
     )
     (path "/52a0c124-2aad-49b4-9ae6-f7669ee07272"
-      (reference "R5") (unit 1) (value "470Ω") (footprint "")
+      (reference "R5") (unit 1) (value "1KΩ") (footprint "")
     )
     (path "/8910fa7f-b124-484f-8582-c326523d5863"
       (reference "U1") (unit 1) (value "NE555D") (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
